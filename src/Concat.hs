@@ -14,3 +14,5 @@ concatF lista = [x|sublista <- lista, x <- sublista]
 -- El generador de la derecha es el que más rapido va
 
 -- MIRAR ESTO DE DOBLE [][]
+
+-- [[1,2],[0]]
