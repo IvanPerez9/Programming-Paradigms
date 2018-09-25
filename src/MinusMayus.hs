@@ -8,15 +8,18 @@ import Data.Char;
 
 
 minusMayus :: String -> String
-minusMayus s 
-			| [c | c <- s , isUpper c] = mayusculas s
-			| otherwise = minusculas s
+minusMayus s = [if isUpper l then toLower l else toUpper l | l <- s]
 			
-mayusculas :: Char -> Char 
-mayusculas x = toUpper x
+			
+			
+-- | [c | c <- s , isUpper c] = mayusculas s
+--			| otherwise = minusculas s
+			
+--mayusculas :: Char -> Char 
+--mayusculas x = toUpper x
 
-minusculas :: Char -> Char 
-minusculas x = toLower x
+--minusculas :: Char -> Char 
+--minusculas x = toLower x
 
 
 
