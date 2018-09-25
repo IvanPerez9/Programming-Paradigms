@@ -12,3 +12,5 @@ concatF lista = [x|sublista <- lista, x <- sublista]
 
 -- Dos generadores, 1 para recorrer la lista grande y otro para la pequeña
 -- El generador de la derecha es el que más rapido va
+
+-- MIRAR ESTO DE DOBLE [][]

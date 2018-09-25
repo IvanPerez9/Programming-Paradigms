@@ -8,7 +8,7 @@ import Data.Char;
 
 
 minusMayus :: String -> String
-minusMayus s = [if isUpper l then toLower l else toUpper l | l <- s]
+minusMayus s = [if isUpper l then toLower l else toUpper l | l <- s] -- Recorre la lista 
 			
 			
 			
