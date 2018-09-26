@@ -10,6 +10,4 @@ primeraUlt :: String -> String
 primeraUlt s = "La primera letra de la frase " ++ s ++ " es: "++ [head s] ++ "Y la ultima es: "++ [last s] 
 
 
---[head x | x<-s]
-
 -- Los pones entre corchetes y se convierte en una lista 
