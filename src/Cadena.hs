@@ -2,7 +2,7 @@ module Cadena where
 
 import Data.Char
 
--- Ejercicio n de la 2 
+-- Ejercicio n de la 2 mirar hoja de ejercicios 
 -- Dada una cadena de caracteres y un solo caracter, indique el numero de apariciones del caracter en la cadena
 -- Con ajuste de patrones, utilizar listas por compresion 
 
