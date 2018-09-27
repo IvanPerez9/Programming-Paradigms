@@ -20,3 +20,4 @@ pertenece x(y:ys) = (x==y) || (pertenece x ys)
 cambio ::Int->Int->[Int] -> [Int]
 cambio _ _ [] = []
 cambio x y (z:zs) = if (z == x) then y:(cambio x y zs) else z:(cambio x y zs)   
+-- cambio 1 2 [1,1,1,1]
