@@ -16,6 +16,7 @@ pertenece x(y:ys) = (x==y) || (pertenece x ys)
 
 
 -- Lista dos elementos, el primero lo sustituyes por el sugundo 
+-- Todas las apariciones del primer elemento las sustituyes por el segundo 
 
 cambio ::Int->Int->[Int] -> [Int]
 cambio _ _ [] = []
