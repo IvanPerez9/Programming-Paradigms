@@ -8,4 +8,9 @@ module Recursividad.Secuencia where
 
 secuencia :: [Int] -> Int
 secuencia [] = 0
-secuencia x:xs = if (x==0) then x : (secuencia xs) else secuencia xs++
+secuencia [0] = 1
+secuencia [x] = 0
+secuencia (0:0:xs) = secuencia(0:xs)
+secuencia (0:x:xs) = 1 + secuencia xs
+secuencia (y:x:xs) = secuencia (x:xs)
+
