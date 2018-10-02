@@ -9,8 +9,8 @@ import Data.Char
 
 mergeSort :: [Int] -> [Int]
 mergeSort [] = []
-merSort [x] = [x]
-mergeSort l = fusionar(mergeSort a)(mergeSort b)
+mergeSort [x] = [x]
+mergeSort l = fusionar(mergeSort (a)) (mergeSort (b))
 			  where 
 			  (a,b) = partir l [](length l `div` 2)
 			  
