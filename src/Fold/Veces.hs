@@ -6,19 +6,20 @@ module Fold.Veces where
 veces :: [Int] -> ([Int],[Int])
 --veces2 lista = foldl(\acum x -> if (pertenece(x,acum)) then ([x],[]) else ([],[x])) ([],[]) lista
 -- Acumulador de unicos y repes
-veces lista = foldl(\(unicos,repes) x -> if (pertenece(x,repes)) then (unicos,repes)
-										 else (pertenece x unicos) then (borrar x unicos, repes ++[x])
-										 else (unicos ++ [x],repes) ([],[]) lista
+veces lista = foldl(\(unicos,repes) x -> if pertenece x repes then (unicos,repes)
+										 else if pertenece x unicos then (borrar x unicos, repes ++[x])
+										 else (unicos ++ [x],repes)) ([],[]) lista
 
 
--- Subfuncion de estar en una lista
-esta :: [Int] -> Bool
-esta [] = False
-esta (x:x2:xs) = (x==x2) || esta(x2:xs) 
+-- Subfuncion de estar en una lista 
 
-pertenece :: [Int]->Int-> Bool
-pertenece []_ = False
-pertenece (x:xs) y = (x==y) || pertenece xs y
+pertenece :: Int -> [Int] -> Bool
+pertenece_[] = False
+pertenece x(y:ys) = (x==y) || (pertenece x ys)
+
+pertenece2 :: [Int]->Int-> Bool
+pertenece2 []_ = False
+pertenece2 (x:xs) y = (x==y) || pertenece xs y
 
 borrar :: Int -> [Int] -> [Int]
 borrar _[] = []
