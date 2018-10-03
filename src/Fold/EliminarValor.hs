@@ -8,6 +8,6 @@ eliminarValor lista elemento = foldr (\x acum -> if x==elemento then acum else x
 -- igual que acum ++ [x]
 
 eliminarValor2 :: [Int] -> Int -> [Int]
-eliminarValor2 lista elemento = foldr (\acum x -> if x==elemento then acum else acum++[x] ) [] lista
+eliminarValor2 lista elemento = foldl (\acum x -> if x==elemento then acum else acum++[x] ) [] lista
 
 -- Right es de derecha a izquierda
