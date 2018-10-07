@@ -12,4 +12,3 @@ secuencia :: [a] -> [[a]]
 secuencia lista = foldl (\acum x -> acum ++ [last acum++[x]]) [[]] lista
 
 
--- n Mayor 3 [1,3,4,5,7] la lista con los 3 mayores -- Con recursividad normal 
