@@ -15,3 +15,12 @@ secuencia lista = foldl (\acum x -> acum ++ [last acum++[x]]) [[]] lista
 secuencia2 :: [a] -> [[a]]
 secuencia2 [] = [[]]
 secuencia2 lista = secuencia2 (init lista) ++ [lista]
+
+-- map f xs, obtiene una lista resultado de aplicar la función f a cada elemento de la lista xs
+
+secuencia3 :: [a] -> [[a]]
+secuencia3 [] = [[]]
+secuencia3 (x:xs) = []:(map(x:)(secuencia3 xs))
+
+-- Agregar por delante es con : 
+

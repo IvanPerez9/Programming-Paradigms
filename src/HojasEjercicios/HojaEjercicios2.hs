@@ -39,3 +39,9 @@ función predefinida de Haskell map). -}
 ejercicioC :: [Int] -> Int
 ejercicioC [] = 0
 ejercicioC (l:ls) = (2*l) + ejercicioC ls -- Porque no 2*l : ejercicioC ls 
+
+ejercicioC' :: [Int] -> Int
+ejercicioC' [] = 0
+ejercicioC' l = ejercicioCAux l 0
+
+ejercicio
