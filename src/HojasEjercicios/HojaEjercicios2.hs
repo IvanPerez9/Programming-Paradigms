@@ -42,6 +42,27 @@ ejercicioC (l:ls) = (2*l) + ejercicioC ls -- Porque no 2*l : ejercicioC ls
 
 ejercicioC' :: [Int] -> Int
 ejercicioC' [] = 0
-ejercicioC' l = ejercicioCAux l 0
+ejercicioC' l = ejercicioCAux l 0 -- Le paso la lista y la acumulacion de sumarlos 
 
-ejercicio
+ejercicioCAux :: [Int] -> Int -> Int
+ejercicioCAux (n:ns) acum = ejercicioCAux ns (2*n + acum) 
+
+-- Con expresion lamda
+{-
+ejercicioC'' :: [Int] -> Int 
+ejercicioC'' lista = map ((*2) lista)
+-}
+
+{- Implementa una función que sume los cuadrados de los números pares contenidos en
+una lista de números enteros. Se piden dos versiones:
+a. Una versión que haga uso de las funciones de orden superior de listas map y
+filter para definir la nueva función.
+b. Una versión que utilice la definición de listas por comprensión.
+-}
+
+ejercicioD :: [Int] -> Int
+ejercicioD l = [ t | t <- l , if t `mod` 2 == 0 then 
+    
+    
+    
+ 
