@@ -55,7 +55,7 @@ ejercicioF x = [ y | y <- [1..x] , x `mod` y == 0]
 -- en una frase dada. Se deberá utilizar la definición de listas por comprensión. 
 
 ejercicioH :: String -> Int
-ejercicioH s = length [s | c <- s, isUpper c]
+ejercicioH s = length [c | c <- s, isUpper c]
 
 -- i) Implementar una función que dada una tupla de tres elementos, donde cada uno de
 -- ellos es a su vez una tupla de dos elementos de tipo String e Int respectivamente,
