@@ -1,5 +1,8 @@
 module HojasEjercicios.HojaEjercicios2 where
 
+import Data.Char
+
+
 -- Implementa una función en Haskell que elimine de una lista de enteros aquellos
 -- números múltiplo de x. Va con Listas por compresion (Forma de recorrer las listas)
 
@@ -60,9 +63,23 @@ filter para definir la nueva función.
 b. Una versión que utilice la definición de listas por comprensión.
 -}
 
-ejercicioD :: [Int] -> Int
-ejercicioD l = [ t | t <- l , if t `mod` 2 == 0 then 
-    
-    
-    
+--ejercicioD :: [Int] -> Int
+--ejercicioD l = [ t | t <- l , if t `mod` 2 == 0 then 
+  
+  
+  --d
+  
+  
+  
+ -- i) 
  
+secuencia :: (Eq a) => [a] -> [a] -> Bool
+secuencia []_ = True
+secuencia (x:xs) [] = False
+secuencia (x:xs)(y:ys) = if x /= y then secuencia (x:xs) (ys)
+ 						  else comprobar (xs) (ys) || secuencia (x:xs) (ys)
+ 						  
+comprobar:: (Eq a) => [a] -> [a] -> Bool
+comprobar []_ = True
+comprobar (x:xs) []  = False
+comprobar (x:xs) (y:ys) = (x==y) && (comprobar xs ys)

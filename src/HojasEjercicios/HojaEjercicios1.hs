@@ -42,8 +42,12 @@ ejercicioD' x = let pi =3.14 in (pi*x*x, pi*x*x)
 -- e) Implementar la función predefinida de listas concat, que se llamará concatenar,
 -- utilizando la definición de listas por comprensión (no se puede utilizar recursividad).
 
---ejercicioE :: [Int] -> [Int] -> [Int]
---ejercicioE x:xs y:ys = 
+ejercicioE :: [[Int]] -> [Int]
+ejercicioE l = [x | x'<-l , x<-x']
+
+-- Derecha va mas rapido que izq
+-- x elementos l final
+-- x' cada micro lista
 
 -- f) Implementar una función que dado un número entero devuelva en una lista todos los
 -- factores de dicho número. Se debe utilizar la definición de listas por comprensión. 
