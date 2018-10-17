@@ -38,4 +38,8 @@ insertarMesaLibre (O lib ocu) mesa = (O (lib ++ [mesa]) ocu)
 ocuparMesa :: Ocupacion -> Int -> Ocupacion
 ocuparMesa (O (M nmesa cap):xs ocupadas) num = if num == cap else  
 
+
+-- Tienes las libres y las ocupadas, vas mirando el numero de asientos en las libres que puedes meter,
+-- Si no los vas pasando a un acumulador, y cuando encuentras 1, lo pasas a ocupados
+-- Luego lo que te queda en libre son todas las del acumulador ++ el resto de libres 
   
