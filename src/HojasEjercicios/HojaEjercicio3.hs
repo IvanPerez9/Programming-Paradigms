@@ -68,7 +68,7 @@ Definir una función que dado un día de la semana, indique si éste es o no labora
 representar el día de la semana se deberá crear un nuevo tipo enumerado. 
 -}
 
-data Dia = Lunes | Martes |  Miercoles | Jueves | Viernes | Sabado | Domingo
+data Dia = Lunes | Martes |  Miercoles | Jueves | Viernes | Sabado | Domingo deriving Eq
 -- ejercicioC :: Dia -> Bool
 -- ejercicioC x = if ((x == Sabado) || (x == Domingo)) then False else True
 
