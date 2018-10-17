@@ -15,6 +15,11 @@ apariciones de ese número entero.
 sumaDoble :: [Int] -> Int
 sumaDoble lista = foldl (+) 0 (map(*2) lista)
 
+-- 2.
+
+sumaCuadrado :: [Int] -> Int
+sumaCuadrado lista = foldl (+) 1 (map(^2) lista)
+
 -- 4 
 
 eliminarApariciones :: [Int] -> Int -> [Int]
@@ -23,7 +28,7 @@ eliminarApariciones lista n = foldl (\acum x -> if (x==n)then acum else acum++[x
 -- 3 
 
 insertarFinal :: [Int] -> Int -> [Int]
-insertarFinal lista n = foldr (\x acum -> x:acum) [] lista
+insertarFinal lista n = foldr (\x acum -> x:acum) [n] lista
 
 insertarFinal' :: [Int] -> Int -> [Int]
 insertarFinal' lista n = foldr (:) [n] lista
