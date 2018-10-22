@@ -24,19 +24,44 @@ esta mesa ha sido añadida a la lista de mesas ocupadas y eliminada de la lista d
 mesas libres.
 -}
 
-type NumeroMesa = Integer
-type Capacidad = Integer
-data Mesa = M NumeroMesa Capacidad deriving (Show,Eq,Ord)
+type MesasLibres = [Mesa]
+type MesasOcupadas = [Mesa]
+data Mesa = Mesa Integer Integer
+data Ocupacion = O MesasLibres MesasOcupadas
 
-type Libres = [Mesa]
-type Ocupadas = [Mesa]
-data Ocupacion = O Libres Ocupadas deriving (Show,Eq,Ord) 
+instance Eq Mesa where
+	Mesa ident asientos == Mesa ident2 asientos2 = asientos == asientos2
+	
+instance Ord Mesa where
+	Mesa ident asientos >= Mesa ident2 asientos2 = asientos >= asientos2
+	Mesa ident asientos <= Mesa ident2 asientos2 = asientos <= asientos2
+	Mesa ident asientos > Mesa ident2 asientos2 = asientos > asientos2
+	Mesa ident asientos < Mesa ident2 asientos2 = asientos < asientos2
+	
+instance Show Ocupacion where
+	show (O libres ocupadas) = "Libres:\n" ++ show libres ++ "\nOcupadas:\n" ++ show ocupadas
+	 
+instance Show Mesa where
+	show (Mesa ident asientos) = "Mesa " ++ show ident ++ " -> Capacidad:" ++ show asientos
+	  
 
-insertarMesaLibre :: Ocupacion -> Mesa -> Ocupacion
-insertarMesaLibre (O lib ocu) mesa = (O (lib ++ [mesa]) ocu)
+addMesaLibre :: Ocupacion -> Mesa -> Ocupacion
+addMesaLibre (O mesas ocupadas) mesa = O (addMesaOrdenada mesas mesa) ocupadas
 
-ocuparMesa :: Ocupacion -> Int -> Ocupacion
-ocuparMesa (O (M nmesa cap):xs ocupadas) num = if num == cap else  
+addMesaOrdenada :: [Mesa] -> Mesa -> [Mesa]
+addMesaOrdenada [] m = [m]
+addMesaOrdenada (m1:mesas) m2
+	| m1 >= m2 = m2:m1:mesas
+	| otherwise = m1:addMesaOrdenada mesas m2
+	
+ocuparMesa :: Ocupacion -> Integer -> Ocupacion
+ocuparMesa ocupacion comensales = ocuparMesaAux ocupacion comensales []
+
+
+ocuparMesaAux :: Ocupacion -> Integer -> [Mesa] -> Ocupacion 
+ocuparMesaAux (O (m@(Mesa ident asientos):mesas) ocupadas) comensales mesasPequenas 
+	| asientos >= comensales = (O (mesasPequenas ++ mesas) (m:ocupadas))
+	| otherwise = ocuparMesaAux (O mesas ocupadas) comensales (mesasPequenas ++ [m])
 
 
 -- Tienes las libres y las ocupadas, vas mirando el numero de asientos en las libres que puedes meter,

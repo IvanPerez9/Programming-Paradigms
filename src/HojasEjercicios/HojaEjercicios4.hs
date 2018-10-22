@@ -95,4 +95,10 @@ instance Collection Pila where
 				 eliminar (Pil a) = Pil (init a)
 				 size (Pil a) = length a
 
+instance Collection Cola where
+				esVacia (Col a) = length a == 0
+				insertar (Col a) b = Col (a ++ [b])
+				primero (Col a) = head a
+				eliminar (Col a) = Col(tail a)
+				size (Col a) = length a 
 
