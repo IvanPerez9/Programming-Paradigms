@@ -99,6 +99,35 @@ instance Collection Cola where
 				esVacia (Col a) = length a == 0
 				insertar (Col a) b = Col (a ++ [b])
 				primero (Col a) = head a
-				eliminar (Col a) = Col(tail a)
+				eliminar (Col a) = Col(tail a) -- Col c:cs = Col cs 
 				size (Col a) = length a 
+				
 
+{- Ejercicio E
+Se quiere poder mostrar por pantalla los datos de los estudiantes matriculados en una
+universidad que pertenezcan a alguna de las asociaciones de esta (culturales, deportivas,
+de representacion estudiantil, etc.). Para ello se deberan crear nuevos tipos de datos que
+representen:
+ Estudiante, de cada uno se debe disponer del nombre y titulacion
+ Titulacion, que pueden ser tres: Grado II, Grado II_ADE, Grado ADE
+ Lista de estudiantes matriculados
+ Lista de estudiantes que pertenecen a asociaciones
+-}
+data Grado = Grado_II | Grado_II_ADE | Grado_ADE
+data Estudiante = Nombre String | Titulacion Grado
+
+
+{- Ejercicio F
+Se quiere poder representar una fecha de la siguiente forma: dd/mm/aaaa, para ello se
+deberá crear un nuevo tipo de datos en Haskell. Por ejemplo, si se crea un nuevo tipo de
+datos cuyo constructor de datos es Fecha, en el intérprete al poner fechas concretas nos
+devolvería la representación de la fecha que hayamos definido:
+
+ Fecha 10 10 2013 
+ 10/10/2013 
+-}
+
+data Fecha = Dia Int | Mes Int | Anno Int deriving Show 
+
+mostrarFecha :: Fecha -> Fecha
+mostrarFecha (d m a) = d ++ "/" ++ m ++ "/" ++ a  
