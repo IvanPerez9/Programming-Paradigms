@@ -47,3 +47,52 @@ ejercicioC (Rama AV r AV) = "|-" ++ show r ++ "-|"
 -- Rama es el constructor de tipo 
 ejercicioC (Rama der r izq) = "(" ++ ejercicioC (der) ++ ") |- " ++ show r ++ " |- (" ++ ejercicioC (izq) ++ ")" 
 
+
+-- Se pide definir una función que calcule el espejo de un árbol. 
+
+data ArbolD a = AVD | RamaD (ArbolD a) a (ArbolD a) deriving Show
+ejercicioD :: (Show a) => ArbolD a -> ArbolD a
+ejercicioD AVD = AVD
+ejercicioD (RamaD AVD r AVD) = (RamaD AVD r AVD)
+ejercicioD (RamaD izq r der) = RamaD (ejercicioD der) r (ejercicioD izq) -- Ojo los parentesis 
+
+{- Ejercicio I 
+Se pide crear una nueva CLASE de tipos, llamada Coleccion, para representar
+colecciones de datos de cualquier tipo, donde los tipos pertenecientes a
+esta clase tendrán el siguiente comportamiento:
+
+	esVacia: función para saber si la colección está vacía.
+	insertar: insertará un nuevo elemento en la colección.
+	primero: devolverá el primer elemento de la colección.
+	eliminar: eliminará un elemento de la colección.
+	size: devolverá el número de elementos de la colección.
+	
+Algunas de las funciones anteriores variarán su implementación en función
+del tipo de colección particular que sea instancia de la clase Coleccion. Por
+ello, se pide crear dos instancias diferentes de esta clase para los dos
+nuevos tipos de datos que se presentan a continuación:
+data Pila a = Pil [a] deriving Show
+data Cola a = Col [a] deriving Show
+-}
+
+data Pila a = Pil [a] deriving Show
+data Cola a = Col [a] deriving Show
+
+-- Poner la "Collecion" "c" y luego "El tipo de Dato" "a" 
+
+class Collection c where 
+				 esVacia :: c a -> Bool
+				 insertar :: c a -> a -> c a
+				 primero :: c a -> a
+				 eliminar :: c a -> c a
+				 size :: c a -> Int
+
+-- Siempre que se toque la pila/cola o lo que sea, poner el constructor
+instance Collection Pila where
+				 esVacia (Pil a) = length a == 0
+				 insertar (Pil a) b = Pil (a ++ [b]) -- Se inserta por el final
+				 primero (Pil a) = last a
+				 eliminar (Pil a) = Pil (init a)
+				 size (Pil a) = length a
+
+
