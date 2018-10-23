@@ -1,5 +1,7 @@
 module HojasEjercicios.HojaEjercicios4 where
 
+import Data.Char
+
 {-
 Listado de ejercicios para poner en práctica los conocimientos adquiridos sobre definición de tipos
 sinónimos y nuevos tipos, tipos recursivos y tipos recursivos polimórficos. Y también sobre el
@@ -23,6 +25,10 @@ devuelva una lista con el resultado.
 ejercicioB :: Float ->  [Float] -> [Float]
 ejercicioB _ [] = []
 ejercicioB num lista = foldl (\acum x -> [num/x] ++ acum) [] lista
+
+eje :: a -> [a] -> [a]
+eje num [] = []
+eje num lista = map(num`div`)lista
 
 {-
 
@@ -127,7 +133,12 @@ devolvería la representación de la fecha que hayamos definido:
  10/10/2013 
 -}
 
-data Fecha = Dia Int | Mes Int | Anno Int deriving Show 
 
-mostrarFecha :: Fecha -> Fecha
-mostrarFecha (d m a) = d ++ "/" ++ m ++ "/" ++ a  
+type Dia = Int
+type Mes = Int
+type Anno = Int
+data Fecha = F Dia | Mes | Anno deriving Show 
+
+
+--mostrarFecha :: Fecha -> Fecha
+--mostrarFecha F(d m a) = Dia d ++ "/" ++ Anno n 
