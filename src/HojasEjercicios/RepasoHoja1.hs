@@ -77,15 +77,15 @@ ejercicioJ [x,y,z,t] = (x+y+z+t) > 10
 -- k) Implementar una función que dado un carácter, que representa un punto cardinal,
 -- devuelva su descripción. Por ejemplo, dado ‘N’ devuelva “Norte”.
 
-{-
+
 ejercicioK :: Char -> String
-ejercicioK c = 
-			  |'N' = "Norte"
-			  |'S' = "Sur" 
-			  |'E' = "Este"
-			  |'O' = "Oeste" 
-			  |otherwise "MAL"
--}		  
+ejercicioK c  
+			  |c == 'N' = "Norte"
+			  |c == 'S' = "Sur" 
+			  |c == 'E' = "Este"
+			  |c == 'O' = "Oeste" 
+			  |otherwise = "MAL"
+		  
 ejercicioK' :: Char -> String
 ejercicioK' 'N' = "Norte"
 ejercicioK' 'S' = "Sur"
