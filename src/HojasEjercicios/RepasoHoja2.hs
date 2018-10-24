@@ -71,5 +71,5 @@ b. Una versión que utilice la definición de listas por comprensión.
 
  -}
  
- ejercicioDa :: [Int] -> Int
- ejercicioDa l = foldr (+) 0 [map x^2 | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
+ejercicioDa :: [Int] -> Int
+ejercicioDa l = foldr (+) 0 [(x^2) | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
