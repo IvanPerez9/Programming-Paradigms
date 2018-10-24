@@ -95,11 +95,15 @@ copiarFichero = do
 calculadora :: IO()
 calculadora = do 
 			  print "El primer digito es: "
-			  num1 <- readLn -- Por se un numero
+			  num1 <- readLn -- Por se un numero 
+			  --read(a):: Int Casteo a lo que te de la gana
 			  print "El segundo digito es: "
 			  num2 <- readLn
 			  print "La operacion que se realiza es: (+) (-) (/) (*) "
-			  operacion <- getLine
-			  if operacion == " " then return() 
-			  	else if (operacion == "+") then print(show(num1 + num2) )
-			  	else return()
+			  operacion <- getChar
+			  let resultado = case operacion of 
+			  									'+' -> num1 + num2 
+			  									'-' -> num1 - num2 
+			  print resultado
+			  
+			  -- If operacion == "+" then print(show(num1+num2)) else return ()
