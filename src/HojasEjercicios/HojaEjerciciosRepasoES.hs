@@ -1,7 +1,7 @@
 module HojasEjercicios.HojaEjerciciosRepasoES where
 
 {-
-FunciÛn que dado un listado de nombres lo muestre por pantalla en forma de tabla.
+Funci√≥n que dado un listado de nombres lo muestre por pantalla en forma de tabla.
 > escribeTabla ["pepe","caramelo","lluvia"]
 1: pepe
 2: caramelo
@@ -19,7 +19,7 @@ escribeTablaAux (x:xs) cont = do
 							  
 
 {-
-Definir una funciÛn que sea capaz de leer dos lÌneas de la entrada est·ndar y las
+Definir una funci√≥n que sea capaz de leer dos l√≠neas de la entrada est√°ndar y las
 compare, escribiendo una cadena por pantalla que indique si son iguales o no.
 > comparaCadenas
 Introduce la primera linea: linea1
@@ -27,16 +27,21 @@ Introduce la segunda linea: hola
 Las cadenas son diferentes
 -}
 
-comparaCadenas :: [String] -> [String] -> IO ()
-comparaCadenas l1 l2 = compararCadenasAux l1 l2 
+compararCadenas::String->String->Bool
+compararCadenas [ ] [ ]= True
+compararCadenas [ ] _ = False
+compararCadenas _ [ ] = False
+compararCadenas (s1:xs1) (s2:xs2) = (s1==s2)&&(compararCadenas xs1 xs2)
 
-compararCadenasAux :: [String] -> [String] -> IO ()
-compararCadenasAux [] _ = print "No son iguales" 
-compararCadenasAux _ [] = print "No son iguales"
---compararCadenasAux  
+comparaCadenas::IO( )
+comparaCadenas = do
+                   s1<-getLine;
+                   s2<-getLine;
+                   let result=compararCadenas s1 s2
+                   if result then print "La cadenas son iguales" else print "Las cadenas son diferentes"
 
 {- 3
-Definir una funciÛn que lea el contenido de un fichero de texto, lo procese
+Definir una funci√≥n que lea el contenido de un fichero de texto, lo procese
 invirtiendo todo el contenido y lo escriba de nuevo sobre el mismo fichero de
 entrada. (u otro)
 -}
@@ -55,10 +60,10 @@ main = do
 		
 		
 {- 4
- Definir una funciÛn que sea capaz de ir leyendo lÌneas de la entrada est·ndar y las
-va imprimiendo junto con el n˙mero de caracteres que tienen. Se ir· ejecutando
-mientras no se encuentra una lÌnea vacÌa. Un ejemplo del resultado de la ejecuciÛn
-de la funciÛn puede ser:
+ Definir una funci√≥n que sea capaz de ir leyendo l√≠neas de la entrada est√°ndar y las
+va imprimiendo junto con el n√∫mero de caracteres que tienen. Se ir√° ejecutando
+mientras no se encuentra una l√≠nea vac√≠a. Un ejemplo del resultado de la ejecuci√≥n
+de la funci√≥n puede ser:
 > leerLineas
 Introduce una linea: hola
 La linea tiene 4 caracteres
@@ -68,7 +73,7 @@ Introduce una linea:
 -}
 
 numeroLista :: IO()
-numeroLista = do -- Meter m·s de una cosa, lo compacta
+numeroLista = do -- Meter m√°s de una cosa, lo compacta
 				print "Introduce una linea: "
 				linea <- getLine
 				if linea == [] then 
@@ -79,7 +84,7 @@ numeroLista = do -- Meter m·s de una cosa, lo compacta
 					numeroLista
 				
 
--- 5. Definir una funciÛn que sea capaz de copiar el contenido de un fichero en otro. 
+-- 5. Definir una funci√≥n que sea capaz de copiar el contenido de un fichero en otro. 
 
 copiarFichero :: IO ()
 copiarFichero = do
