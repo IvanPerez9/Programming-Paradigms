@@ -12,6 +12,9 @@ apariciones de ese número entero.
 
 -- 1.
 
+suma ::[Int] -> Int
+suma lista = foldl (+) 0 (lista)
+
 sumaDoble :: [Int] -> Int
 sumaDoble lista = foldl (+) 0 (map(*2) lista)
 

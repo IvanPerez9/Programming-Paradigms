@@ -128,7 +128,7 @@ ejercicioGAux (x:xs) vistos repetidos unicos = if esta vistos x then ejercicioGA
 												
 eliminar :: [Int] -> Int -> [Int]
 eliminar [] _ = []
-eliminar (n:ns) e = if n == e then ns else eliminar ns e 
+eliminar (n:ns) e = if n == e then ns else  n:(eliminar ns e) 
 
 {- H)
 Dada una lista de números enteros implementar una función que devuelva una lista con
@@ -147,6 +147,19 @@ mayor (l:ls) = if l > mayor ls then l else mayor ls
 esMayor :: [Int] -> Int -> Bool
 esMayor [] _ = False
 esMayor (n:ns) e = if e > n then True else esMayor ns e
+
+{- K
+Implementa una función polimórfica en Haskell que reciba 2 listas y vaya cogiendo un
+elemento de la primera y dos de la segunda, creando una lista final de ternas. En caso
+de que una de las dos listas se acabe, mostrará la lista de ternas construidas hasta ese
+momento.
+-}
+
+ejercicioK :: [Int] -> [Int] -> [(Int,Int,Int)]
+ejercicioK [] _ = []
+ejercicioK _ [] = []
+ejercicioK _ [x] = []
+ejercicioK (x:xs)(y:y2:ys) = (x,y,y2):ejercicioK xs ys
 
 {- L)
 Se pide una función polimórfica en Haskell que dado un elemento y una lista añada

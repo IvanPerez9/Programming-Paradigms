@@ -6,7 +6,7 @@ module Fold.MayorTres where
 mayorTres :: [Int] -> Int -> [Int]
 mayorTres l n = nmayoresAux l n 0 []
 
--- LA lista, el numero que quiero coger, numero de elementos en la lista, y lista resultados
+-- La lista, el numero que quiero coger, numero de elementos en la lista, y lista resultados
 nmayoresAux :: [Int]-> Int -> Int -> [Int] -> [Int]
 nmayoresAux [] _ _ acum = acum
 nmayoresAux (x:xs) n cont acum = if cont<n then nmayoresAux xs n (cont+1) (acum++[x])

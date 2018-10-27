@@ -17,10 +17,6 @@ pertenece :: Int -> [Int] -> Bool
 pertenece_[] = False
 pertenece x(y:ys) = (x==y) || (pertenece x ys)
 
-pertenece2 :: [Int]->Int-> Bool
-pertenece2 []_ = False
-pertenece2 (x:xs) y = (x==y) || pertenece xs y
-
 borrar :: Int -> [Int] -> [Int]
 borrar _[] = []
 borrar x (y:ys) = if x == y then ys else x:(borrar x ys)
