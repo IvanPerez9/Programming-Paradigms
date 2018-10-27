@@ -62,15 +62,13 @@ a. Una versión que haga uso de las funciones de orden superior de listas map y
 filter para definir la nueva función.
 b. Una versión que utilice la definición de listas por comprensión.
 -}
+  
+ejercicioDb :: [Int] -> Int
+ejercicioDb l = foldr (+) 0 [(x^2) | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
 
---ejercicioD :: [Int] -> Int
---ejercicioD l = [ t | t <- l , if t `mod` 2 == 0 then 
-  
-  
-  --d
-  
-  
-  
+ejercicioDa :: [Int] -> Int
+ejercicioDa l = foldr (+) 0  (map (*2) (filter even l))
+
  -- i) 
  
 secuencia :: (Eq a) => [a] -> [a] -> Bool

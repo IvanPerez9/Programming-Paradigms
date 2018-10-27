@@ -71,5 +71,89 @@ b. Una versión que utilice la definición de listas por comprensión.
 
  -}
  
+ejercicioDb :: [Int] -> Int
+ejercicioDb l = foldr (+) 0 [(x^2) | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
+
 ejercicioDa :: [Int] -> Int
-ejercicioDa l = foldr (+) 0 [(x^2) | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
+ejercicioDa l = foldr (+) 0  (map (*2) (filter even l))
+
+{- E)
+Dada una lista de enteros, implementar una función para devolver tuplas formadas por
+los elementos (sin repetir) de la lista, junto con la primera posición en la que aparecen.
+-}
+-- Todos lo de contador con Aux ?
+
+ejercicioE :: [Int] -> [(Int,Int)]
+ejercicioE l = ejercicioEAux l 1 [] []
+
+-- La lista inicial, posicion , lista vistos, resultado , resultado
+ejercicioEAux :: [Int] -> Int -> [Int] -> [(Int,Int)] -> [(Int,Int)]
+ejercicioEAux [] pos vistos resultado = resultado
+ejercicioEAux (l:ls) pos vistos resultado = if esta vistos l then ejercicioEAux ls (pos+1) vistos resultado
+											else ejercicioEAux ls (pos+1) (l:vistos) ((l,pos):resultado)
+											
+esta :: [Int] -> Int -> Bool
+esta [] _ = False
+esta (n:ns) e = if n == e then True else esta ns e
+ 
+{- F)
+Implementar en Haskell una función que calcule el número de secuencias de ceros que
+hay en una lista de números.
+-}
+
+ejericicioF :: [Int] -> Int
+ejericicioF [] = 0
+ejericicioF [0] = 1
+ejericicioF [x] = 0
+ejericicioF (0:0:xs) = ejericicioF(0:xs)
+ejericicioF (0:x:xs) = 1 + ejericicioF xs
+ejericicioF (y:x:xs) = ejericicioF (x:xs)
+
+{- G)
+Implementar una función en Haskell que reciba una lista de números enteros y devuelva
+dos listas: una con los elementos sin repetir y otra con los elementos que están
+repetidos.
+-}
+
+-- Mirar Veces de Fold
+
+ejercicioG :: [Int] -> ([Int],[Int])
+ejercicioG [] = ([],[])
+ejercicioG l = ejercicioGAux l [] [] []
+
+ejercicioGAux :: [Int] -> [Int] -> [Int] -> [Int] -> ([Int],[Int])
+ejercicioGAux [] vistos repetidos unicos = (repetidos,unicos)
+ejercicioGAux (x:xs) vistos repetidos unicos = if esta vistos x then ejercicioGAux xs (vistos) (x:repetidos) unicos 
+												else ejercicioGAux xs (x:vistos) repetidos (x:unicos)
+												
+eliminar :: [Int] -> Int -> [Int]
+eliminar [] _ = []
+eliminar (n:ns) e = if n == e then ns else eliminar ns e 
+
+{- H)
+Dada una lista de números enteros implementar una función que devuelva una lista con
+los n elementos mayores de la lista original. 
+-}
+
+-- Mirar MayorTres de Fold
+
+ejercicioH :: [Int] -> Int -> [Int] 
+ejercicioH [] _  = []
+
+mayor :: [Int] -> Int
+mayor [] = 0
+mayor (l:ls) = if l > mayor ls then l else mayor ls
+
+esMayor :: [Int] -> Int -> Bool
+esMayor [] _ = False
+esMayor (n:ns) e = if e > n then True else esMayor ns e
+
+{- L)
+Se pide una función polimórfica en Haskell que dado un elemento y una lista añada
+dicho elemento al final de la lista.
+-}
+
+ejercicioL :: [Int] -> Int -> [Int]
+ejercicioL lista n = foldr (\x acum -> x:acum) [n] lista
+
+
