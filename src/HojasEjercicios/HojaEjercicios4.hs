@@ -26,9 +26,9 @@ ejercicioB :: Float ->  [Float] -> [Float]
 ejercicioB _ [] = []
 ejercicioB num lista = foldl (\acum x -> [num/x] ++ acum) [] lista
 
-eje :: a -> [a] -> [a]
+eje :: (Integral a) => a -> [a] -> [a]
 eje num [] = []
---eje num lista = map(num `div`)lista
+eje num lista = map(num `div`)lista
 
 {-
 

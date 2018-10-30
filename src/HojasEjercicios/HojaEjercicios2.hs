@@ -148,14 +148,14 @@ ejercicioH l n = ejercicioHAux l n 0 []
 -- El 0 como contador
 ejercicioHAux :: [Int] -> Int -> Int -> [Int] -> [Int]
 ejercicioHAux [] _ _ [] = []
-ejerciciohaux (l:ls) n cont acum = if cont<n then 
-				   ejercicioHAux ls n cont+1 l:acum
-				   else let a = menor (acum) in
-				   	if l<a then ejercicioHAux ls n cont acum
-					else ejercicioHaux ls n cont intercambiar (acum a l)
+ejerciciohaux (l:ls) n cont acum = if cont<n then ejercicioHAux ls n (cont+1) (l:acum)
+				   					else let a = menor (acum) in
+				   						if l<a then ejercicioHAux ls n cont acum
+										else ejercicioHAux ls n cont (intercambiar acum a l)
+
 menor :: [Int] -> Int
 menor [x] = x
-menor l:ls = menorAux ls l
+menor (l:ls) = menorAux ls l
 
 menorAux :: [Int] -> Int -> Int
 menorAux [] x = x

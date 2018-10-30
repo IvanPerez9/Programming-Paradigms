@@ -22,7 +22,7 @@ ejercicioA'' :: [Int] -> Int -> [Int]
 ejercicioA'' (l:ls) num = ( ejercicioA2 (l:ls) num [])
 
 ejercicioA2 :: [Int] -> Int -> [Int] -> [Int]
-ejercicioA2 [] _ [] = []
+ejercicioA2 [] _ acum = acum
 ejercicioA2 (l:ls) num acum = if (l `mod`num /= 0) then ejercicioA2 ls num (l:acum) else ejercicioA2 ls num acum
 
 {- B)
