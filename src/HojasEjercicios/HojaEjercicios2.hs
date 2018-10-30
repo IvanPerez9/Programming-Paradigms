@@ -4,12 +4,12 @@ import Data.Char
 
 
 {- A)
-Implementa una funciÛn en Haskell que elimine de una lista de enteros aquellos
-n˙meros m˙ltiplo de x.
+Implementa una funci√≥n en Haskell que elimine de una lista de enteros aquellos
+n√∫meros m√∫ltiplo de x.
 > cribar [0,5,8,9,-9,6,0,85,-12,15] 2
 [5,9,-9,85,15]
-Se piden diferentes versiones de la misma funciÛn:
-- Con definiciÛn de listas por comprensiÛn
+Se piden diferentes versiones de la misma funci√≥n:
+- Con definici√≥n de listas por comprensi√≥n
 - Con recursividad no final
 - Con recursividad final o de cola
 -}
@@ -29,26 +29,26 @@ ejercicioA2 [] _ [] = []
 ejercicioA2 (l:ls) num acum = if (l `mod`num /= 0) then ejercicioA2 ls num (l:acum) else ejercicioA2 ls num acum
 
 {- B)
- Dada la siguiente definiciÛn de funciÛn
+ Dada la siguiente definici√≥n de funci√≥n
 doble :: Int -> Int
 doble x = x + x
-øCÛmo cambiarÌa la definiciÛn utilizando expresiones lambda?
+¬øC√≥mo cambiar√≠a la definici√≥n utilizando expresiones lambda?
 -}
 
 doble :: Int -> Int
 doble x = x + x
 
 ejercicioB :: Int -> Int
-ejercicioB x = (\n -> n*2) x -- PORQU… LA X POR FUERA
+ejercicioB x = (\n -> n*2) x -- PORQU√â LA X POR FUERA
 
 {- C)
-Se pide una funciÛn en Haskell que dada una lista de n˙meros enteros obtenga un
-n˙mero entero con el resultado de calcular el doble de cada uno de los elementos de la
-lista original y sumarlos todos. Se piden diferentes versiones de la misma funciÛn:
+Se pide una funci√≥n en Haskell que dada una lista de n√∫meros enteros obtenga un
+n√∫mero entero con el resultado de calcular el doble de cada uno de los elementos de la
+lista original y sumarlos todos. Se piden diferentes versiones de la misma funci√≥n:
 - Con recursividad no final
 - Con recursividad final o de cola
 - Utilizando expresiones lambda u orden superior (se puede hacer uso de la
-funciÛn predefinida de Haskell map). 
+funci√≥n predefinida de Haskell map). 
 -}
 
 ejercicioC :: [Int] -> Int
@@ -66,11 +66,11 @@ ejercicioC'' :: [Int] -> Int
 ejercicioC'' l = foldl (+) 0 (map (2*) l)
 
 {- D)
-Implementa una funciÛn que sume los cuadrados de los n˙meros pares contenidos en
-una lista de n˙meros enteros. Se piden dos versiones:
-a. Una versiÛn que haga uso de las funciones de orden superior de listas map y
-filter para definir la nueva funciÛn.
-b. Una versiÛn que utilice la definiciÛn de listas por comprensiÛn.
+Implementa una funci√≥n que sume los cuadrados de los n√∫meros pares contenidos en
+una lista de n√∫meros enteros. Se piden dos versiones:
+a. Una versi√≥n que haga uso de las funciones de orden superior de listas map y
+filter para definir la nueva funci√≥n.
+b. Una versi√≥n que utilice la definici√≥n de listas por comprensi√≥n.
 
  -}
  
@@ -81,8 +81,8 @@ ejercicioDa :: [Int] -> Int
 ejercicioDa l = foldr (+) 0  (map (*2) (filter even l))
 
 {- E)
-Dada una lista de enteros, implementar una funciÛn para devolver tuplas formadas por
-los elementos (sin repetir) de la lista, junto con la primera posiciÛn en la que aparecen.
+Dada una lista de enteros, implementar una funci√≥n para devolver tuplas formadas por
+los elementos (sin repetir) de la lista, junto con la primera posici√≥n en la que aparecen.
 -}
 -- Todos lo de contador con Aux ?
 
@@ -100,8 +100,8 @@ esta [] _ = False
 esta (n:ns) e = if n == e then True else esta ns e
  
 {- F)
-Implementar en Haskell una funciÛn que calcule el n˙mero de secuencias de ceros que
-hay en una lista de n˙meros.
+Implementar en Haskell una funci√≥n que calcule el n√∫mero de secuencias de ceros que
+hay en una lista de n√∫meros.
 -}
 
 ejericicioF :: [Int] -> Int
@@ -113,8 +113,8 @@ ejericicioF (0:x:xs) = 1 + ejericicioF xs
 ejericicioF (y:x:xs) = ejericicioF (x:xs)
 
 {- G)
-Implementar una funciÛn en Haskell que reciba una lista de n˙meros enteros y devuelva
-dos listas: una con los elementos sin repetir y otra con los elementos que est·n
+Implementar una funci√≥n en Haskell que reciba una lista de n√∫meros enteros y devuelva
+dos listas: una con los elementos sin repetir y otra con los elementos que est√°n
 repetidos.
 -}
 
@@ -136,17 +136,42 @@ borrar x (y:ys) = if x == y then ys else x:(borrar x ys)
 
 
 {- H)
-Dada una lista de n˙meros enteros implementar una funciÛn que devuelva una lista con
+Dada una lista de n√∫meros enteros implementar una funci√≥n que devuelva una lista con
 los n elementos mayores de la lista original. 
 -}
 
 -- Mirar MayorTres de Fold
 
+ejercicioH :: [Int] -> Int -> [Int]
+ejercicioH [] _ = []
+ejercicioH l n = ejercicioHAux l n 0 []
+-- El 0 como contador
+ejercicioHAux :: [Int] -> Int -> Int -> [Int] -> [Int]
+ejercicioHAux [] _ _ [] = []
+ejerciciohaux (l:ls) n cont acum = if cont<n then 
+				   ejercicioHAux ls n cont+1 l:acum
+				   else let a = menor (acum) in
+				   	if l<a then ejercicioHAux ls n cont acum
+					else ejercicioHaux ls n cont intercambiar (acum a l)
+menor :: [Int] -> Int
+menor [x] = x
+menor l:ls = menorAux ls l
+
+menorAux :: [Int] -> Int -> Int
+menorAux [] x = x
+menorAux (l:ls) x = if l<x then menorAux ls l
+		    else menorAux ls x
+		    
+intercambiar :: [Int]->Int->Int -> [Int]
+intercambiar [] _ _ = []
+intercambiar (l:ls) x y = if x == l then (y:ls) 
+			  else l:intercambiar ls x y
+
 
 {- I)
-Implementa una funciÛn incluye en Haskell que reciba dos listas de n˙meros enteros y
-nos diga si la primera de las listas est· contenida en la segunda. Se dice que una lista
-est· contenida en otra si los elementos de la primera aparecen dentro de la segunda, en
+Implementa una funci√≥n incluye en Haskell que reciba dos listas de n√∫meros enteros y
+nos diga si la primera de las listas est√° contenida en la segunda. Se dice que una lista
+est√° contenida en otra si los elementos de la primera aparecen dentro de la segunda, en
 el mismo orden y de forma consecutiva
 -} 
  
@@ -162,9 +187,9 @@ comprobar (x:xs) []  = False
 comprobar (x:xs) (y:ys) = (x==y) && (comprobar xs ys)
 
 {- K
-Implementa una funciÛn polimÛrfica en Haskell que reciba 2 listas y vaya cogiendo un
+Implementa una funci√≥n polim√≥rfica en Haskell que reciba 2 listas y vaya cogiendo un
 elemento de la primera y dos de la segunda, creando una lista final de ternas. En caso
-de que una de las dos listas se acabe, mostrar· la lista de ternas construidas hasta ese
+de que una de las dos listas se acabe, mostrar√° la lista de ternas construidas hasta ese
 momento.
 -}
 
@@ -175,7 +200,7 @@ ejercicioK _ [x] = []
 ejercicioK (x:xs)(y:y2:ys) = (x,y,y2):ejercicioK xs ys
 
 {- L)
-Se pide una funciÛn polimÛrfica en Haskell que dado un elemento y una lista aÒada
+Se pide una funci√≥n polim√≥rfica en Haskell que dado un elemento y una lista a√±ada
 dicho elemento al final de la lista.
 -}
 
