@@ -23,7 +23,11 @@ __5. Definicion de Tipos__
 * Ejercicios definiendo nuestros propios tipos con "Type" y "Data". 
 * Ejercicios de Arboles.
 
-__6. Hojas de ejercicios__
+__6. Ejercicios de Clases__
+
+* Ejercicios de clases, ejercicios largos
+
+__7. Hojas de ejercicios__
 
 * Hoja 1: Ejercicios para empezar en haskell, sintaxis y declaraciones.
 * Hoja 2: Listas por compresion, Recursividad, Recursividad Final, Funciones de Orden superior.
