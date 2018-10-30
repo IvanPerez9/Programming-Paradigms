@@ -28,7 +28,7 @@ ejercicioB num lista = foldl (\acum x -> [num/x] ++ acum) [] lista
 
 eje :: a -> [a] -> [a]
 eje num [] = []
-eje num lista = map(num`div`)lista
+--eje num lista = map(num `div`)lista
 
 {-
 
@@ -57,7 +57,7 @@ ejercicioC (Rama der r izq) = "(" ++ ejercicioC (der) ++ ") |- " ++ show r ++ " 
 -- Se pide definir una función que calcule el espejo de un árbol. 
 
 data ArbolD a = AVD | RamaD (ArbolD a) a (ArbolD a) deriving Show
-ejercicioD :: (Show a) => ArbolD a -> ArbolD a
+ejercicioD :: ArbolD a -> ArbolD a
 ejercicioD AVD = AVD
 ejercicioD (RamaD AVD r AVD) = (RamaD AVD r AVD)
 ejercicioD (RamaD izq r der) = RamaD (ejercicioD der) r (ejercicioD izq) -- Ojo los parentesis 
