@@ -6,7 +6,6 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.python.pydev.PyDevBuilder</name>
 			<name>net.sf.eclipsefp.haskell.core.builder.HaskellBuilder</name>
 			<arguments>
 			</arguments>
