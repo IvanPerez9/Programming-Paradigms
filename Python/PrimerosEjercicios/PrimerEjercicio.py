@@ -26,11 +26,20 @@ else:
     print("No es bisiesto")
     
     
+print(3/2)
 # Triangulo de N filas
 
-n = 4
 n = int (input("Introduce le numero de files del triangulo: "))
 
 for i in range(n+1):
     espacios = n -i 
-    print(' ' *espacios + '* ' *i)  #Mul
+    print(' ' *espacios + '*' *(2*i+1))  #Truco dejar los espacios en blanco
+    
+#Triangulo al reves -> dar la vuelta al rango range (n ,0 , -1)
+
+n = int (input("Introduce le numero de files del triangulo: "))
+
+for i in range(n-1,-1,-1):
+    print(' '*(n-i) + '*' *(2*i+1))
+    
+
