@@ -33,6 +33,4 @@ n = int (input("Introduce le numero de files del triangulo: "))
 
 for i in range(n+1):
     espacios = n -i 
-    
-
     print(' ' *espacios + '* ' *i)  #Mul
