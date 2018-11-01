@@ -1,8 +1,8 @@
-from math import pi
+
 import math
 
-# Sin valor de retorno, si devuelvo algo bien, sino pues nada sin return
 
+# Sin valor de retorno, si devuelvo algo bien, sino pues nada sin return
 def imprime(parametro):
     print(parametro)
     
