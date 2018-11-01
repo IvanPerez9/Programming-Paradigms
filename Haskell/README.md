@@ -34,3 +34,4 @@ __7. Hojas de ejercicios__
 * Hoja Plegado: Ejercicios con Foldl, Foldr y su definición.
 * Hoja 3: Ejercicios sobre definicion de tipos.
 * Hoja 4: Ejercicio de Tipo de datos (arboles), clases e instancias.
+* Hoja E/S : Ejercicios de E/S y ejercicio de Calculadora
