@@ -1,5 +1,7 @@
 # Ejercicios Haskell 
 
+### Entrar en "src" para ver los ejercicios.
+
 __1. Primeros ejercicios__
 
 * Primeros ejercicios que se realizan en Haskell, ejercicios de Sintaxis.
