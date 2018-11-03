@@ -1,4 +1,6 @@
-module HojasEjercicios.HojaEjercicios3 where
+module HojaEjercicios.RepasoHoja3 where
+
+import Data.Char
 
 {-
 Se pide una función que dada una lista de racionales, donde cada racional se define como
@@ -8,25 +10,19 @@ lista con todos los racionales equivalentes al dado. Realiza dos versiones del e
 2. Empleando data. 
 -}
 
-type Numerador = Integer
-type Denominador = Integer
-type Fraccion = (Numerador , Denominador) 
+type Numerador = Int
+type Denominador = Int
+type Fraccion = (Numerador , Denominador)
+
+data Racional = R Numerador Denominador deriving Show
 
 ejercicioA :: [Fraccion] -> Fraccion -> [Fraccion]
 ejercicioA [] _ = []
-ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if n==n2 && d==d2 then (n2,d2):acum else acum)[] lista
--- ejercicioA  lista (n1,y1) = foldr (\(n2,y2) acum -> if (n1*y2) == (n2*y1) then [(n2,y2)] ++ acum else acum) [] lista
-data Racional = R Numerador Denominador deriving Show
+ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if n==n2 && d==d2 then (n2,d2):acum else acum) [] lista
+
 ejercicioA' :: [Racional] -> Racional -> [Racional]
 ejercicioA' [] _ = []
 ejercicioA' lista (R n d) = foldr (\(R n2 d2) acum -> if n==n2 && d==d2 then (R n2 d2):acum else acum) [] lista
-
--- Con Data
-
-data Fraccion' = F Numerador Denominador deriving Show
-
-ejercicioA'' :: Fraccion' -> Fraccion' -> Bool 
-ejercicioA'' (F n1 d1) (F n2 d2) = n1 * d2 == n2 * d1  
 
 
 {-
@@ -34,29 +30,26 @@ Función que dado un punto de coordenadas y una dirección (Norte, Sur, Este u
 Oeste) mueva el punto hacia la dirección indicada. 
 -}
 
-type CoordenadaX = Integer 
-type CoordenadaY = Integer
-data Coordenadas = C CoordenadaX CoordenadaY deriving Show 
 data Direccion = Norte | Sur | Este | Oeste
+type CoorX = Float
+type CoorY = Float
+type Punto = (CoorX , CoorY)
 
-ejercicioB :: Coordenadas -> Direccion -> Coordenadas
-ejercicioB (C x y) Norte = C (x+1) y
-ejercicioB (C x y) Sur = C (x-1) y
-ejercicioB (C x y) Este = C x (y+1)
-ejercicioB (C x y) Oeste = C x (y-1)
+ejercicioB :: Punto -> Direccion -> Punto
+ejercicioB (x,y) Norte = (x+1,y)
+ejercicioB (x,y) Sur = (x-1,y)
+ejercicioB (x,y) Este = (x,y+1)
+ejercicioB (x,y) Oeste = (x,y-1)
 
 -- Función que dados dos puntos de coordenadas indique cuál está más al sur
 
-ejercicioB' :: Coordenadas -> Coordenadas -> Coordenadas
-ejercicioB' (C x1 y1) (C x2 y2) = if (x2<x1) then (C x2 y2) else (C x1 y1)
+masSur :: Punto -> Punto -> Punto
+masSur (x,y) (x2,y2) = if x < x2 then (x,y) else (x2,y2)
 
 -- Función que calcule la distancia entre dos puntos
 
-type Punto = (Float,Float)
-
-ejercicioB'' :: Punto -> Punto -> Float
-ejercicioB'' (x1,y1) (x2,y2) = sqrt ( ((x2-x1)^2) + ((y2-y1)^2 ))
-
+distancia :: Punto -> Punto -> Float
+distancia (x1,y1) (x2,y2) = sqrt((x1-x2)^2+(y1-y2)^2)
 
 -- Función que dado un punto y una lista de direcciones, retorne el camino que
 --forman todos los puntos después de cada movimiento sucesivo desde el punto original
@@ -64,19 +57,19 @@ ejercicioB'' (x1,y1) (x2,y2) = sqrt ( ((x2-x1)^2) + ((y2-y1)^2 ))
     => [(3.2,4.5),(4.2,4.5),(5.2,4.5),(5.2,5.5),(4.2,5.5)]
 -}
 
-ejercicioB4 :: Punto -> [Direccion] -> [Punto]
-ejercicioB4 _ [] = []
---ejercicioB4 p (c:cs) = ejercicioB (p,c):ejercicioB4 (ejercicioB (p,c)cs) 
+camino :: Punto -> [Direccion] -> [Punto]
+camino (x,y) [] = [(x,y)]
+--camino p l:ls = ((ejercicioB (p,l)):camino (ejercicioB (p,l))ls)
 
 {- 
 Definir una función que dado un día de la semana, indique si éste es o no laborable. Para
 representar el día de la semana se deberá crear un nuevo tipo enumerado. 
 -}
 
-data DiaSemana = Lunes | Martes | Miercoles | Jueves | Viernes | Sabado | Domingo deriving Eq
+data DiaSemana = Lunes | Marte | Miercoles | Jueves | Viernes | Sabado | Domingo deriving Eq
 
-ejercicioC :: DiaSemana -> Bool
-ejercicioC x = x == Sabado || x == Domingo 
+laborables :: DiaSemana -> Bool
+laborables x = x == Sabado || x == Domingo
 
 {- 
 La empresa RealTimeSolutions, Inc. está trabajando en un controlador para una central
@@ -100,27 +93,27 @@ aire acondicionado reciben dos tipos de órdenes: apagar y encender (on y off). S
 	On 
 -}
 
---1
-type Celcius = Float
+--1 
+
+type Celsius = Float
 type Fahrenheit = Float
-data Temperatura = T Celcius | Farenheit deriving Show
+data Temperatura = Celsius Float | Fahrenheit Float deriving Show
 
---2
---ejercicioD2 :: Temperatura -> Temperatura
---ejercicioD2 T temp = T (temp * (9/5) + 32)
+--2 
 
-data Temperatura2 = Celsius Float | Fahrenheit Float deriving Show
-convert ::  Temperatura2 -> Temperatura2 
+convert :: Temperatura -> Temperatura
 convert (Celsius c) = Fahrenheit (c * (9/5) + 32)
+convert (Fahrenheit x) = Celsius ((x-32) * (5/9))
 
---3 
+--3
 
-data AA = Apagado | Encendido 
+data AA = On | Off deriving Show
 
 --4 
 
-action :: Temperatura2 -> AA
-action (Celsius c) = if c > 28 then Encendido else Apagado 
+action :: Temperatura -> AA
+action (Celsius c) = if c > 28 then On else Off
+-- action (Fahrenheit f)= action (convert Fahrenheit f)
 
 {-
 Definir un tipo moneda para representar euros y dólares USA. Definir una función que
@@ -132,7 +125,7 @@ data Moneda = Dollar Float | Euro Float
 
 conversion :: Moneda -> Moneda 
 conversion (Euro e) = Dollar (e * 1.14)
-conversion (Dollar d) = Euro (d / 1.14) 
+conversion (Dollar d) = Euro (d / 1.14)
 
 {-  Ejercicio F
 
@@ -149,7 +142,7 @@ data Expr = Valor Integer
 	|Expr :+: Expr
 	|Expr :-: Expr
 	|Expr :*: Expr deriving Show
-
+	
 -- 1
 
 valor :: Expr -> Integer
@@ -158,4 +151,3 @@ valor (Valor x) = x
 valor (exp1 :+: exp2) = valor exp1 + valor exp2 
 valor (exp1 :-: exp2) = valor exp1 - valor exp2
 valor (exp1 :*: exp2) = valor exp1 * valor exp2
-
