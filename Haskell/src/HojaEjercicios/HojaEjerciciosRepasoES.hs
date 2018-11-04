@@ -60,10 +60,10 @@ main = do
 		
 		
 {- 4
- Definir una función que sea capaz de ir leyendo líneas de la entrada estándar y las
-va imprimiendo junto con el número de caracteres que tienen. Se irá ejecutando
-mientras no se encuentra una línea vacía. Un ejemplo del resultado de la ejecución
-de la función puede ser:
+ Definir una funcion que sea capaz de ir leyendo lineas de la entrada estandar y las
+va imprimiendo junto con el numero de caracteres que tienen. Se ira ejecutando
+mientras no se encuentra una linea vacia. Un ejemplo del resultado de la ejecución
+de la funcion puede ser:
 > leerLineas
 Introduce una linea: hola
 La linea tiene 4 caracteres
@@ -84,7 +84,7 @@ numeroLista = do -- Meter más de una cosa, lo compacta
 					numeroLista
 				
 
--- 5. Definir una función que sea capaz de copiar el contenido de un fichero en otro. 
+-- 5. Definir una funcion que sea capaz de copiar el contenido de un fichero en otro. 
 
 copiarFichero :: IO ()
 copiarFichero = do
