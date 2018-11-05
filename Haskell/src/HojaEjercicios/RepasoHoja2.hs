@@ -36,7 +36,7 @@ doble :: Int -> Int
 doble x = x + x
 
 ejercicioB :: Int -> Int
-ejercicioB x = (\n -> n*2) x -- PORQUÉ LA X POR FUERA
+ejercicioB x = (\n -> n*2) x 
 
 {- C)
 Se pide una función en Haskell que dada una lista de números enteros obtenga un
@@ -75,7 +75,7 @@ ejercicioDb :: [Int] -> Int
 ejercicioDb l = foldr (+) 0 [(x^2) | x <- l , x `mod` 2 == 0] -- Right , de derecha a izq
 
 ejercicioDa :: [Int] -> Int
-ejercicioDa l = foldr (+) 0  (map (*2) (filter even l))
+ejercicioDa l = foldr (+) 0  (map (^2) (filter even l))
 
 {- E)
 Dada una lista de enteros, implementar una función para devolver tuplas formadas por
