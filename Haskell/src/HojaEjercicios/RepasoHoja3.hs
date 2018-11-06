@@ -14,15 +14,15 @@ type Numerador = Int
 type Denominador = Int
 type Fraccion = (Numerador , Denominador)
 
-data Racional = R Numerador Denominador deriving Show
+data Racional = R (Numerador,Denominador) deriving Show
 
 ejercicioA :: [Fraccion] -> Fraccion -> [Fraccion]
 ejercicioA [] _ = []
-ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if n==n2 && d==d2 then (n2,d2):acum else acum) [] lista
+ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if ((n*d2) == (d*n2)) then (n2,d2):acum else acum) [] lista
 
 ejercicioA' :: [Racional] -> Racional -> [Racional]
 ejercicioA' [] _ = []
-ejercicioA' lista (R n d) = foldr (\(R n2 d2) acum -> if n==n2 && d==d2 then (R n2 d2):acum else acum) [] lista
+ejercicioA' lista (R(n,d)) = foldr (\(R(n2,d2)) acum -> if ((n*d2) == (d*n2))  then (R(n2,d2)):acum else acum) [] lista
 
 
 {-

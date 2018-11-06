@@ -12,22 +12,15 @@ type Numerador = Integer
 type Denominador = Integer
 type Fraccion = (Numerador , Denominador) 
 
+data Racional = R (Numerador,Denominador) deriving Show
+
 ejercicioA :: [Fraccion] -> Fraccion -> [Fraccion]
 ejercicioA [] _ = []
-ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if n==n2 && d==d2 then (n2,d2):acum else acum)[] lista
--- ejercicioA  lista (n1,y1) = foldr (\(n2,y2) acum -> if (n1*y2) == (n2*y1) then [(n2,y2)] ++ acum else acum) [] lista
-data Racional = R Numerador Denominador deriving Show
+ejercicioA lista (n,d) = foldr (\(n2,d2) acum -> if ((n*d2) == (d*n2)) then (n2,d2):acum else acum) [] lista
+
 ejercicioA' :: [Racional] -> Racional -> [Racional]
 ejercicioA' [] _ = []
-ejercicioA' lista (R n d) = foldr (\(R n2 d2) acum -> if n==n2 && d==d2 then (R n2 d2):acum else acum) [] lista
-
--- Con Data
-
-data Fraccion' = F Numerador Denominador deriving Show
-
-ejercicioA'' :: Fraccion' -> Fraccion' -> Bool 
-ejercicioA'' (F n1 d1) (F n2 d2) = n1 * d2 == n2 * d1  
-
+ejercicioA' lista (R(n,d)) = foldr (\(R(n2,d2)) acum -> if ((n*d2) == (d*n2))  then (R(n2,d2)):acum else acum) [] lista
 
 {-
 Función que dado un punto de coordenadas y una dirección (Norte, Sur, Este u
