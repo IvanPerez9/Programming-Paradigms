@@ -72,3 +72,19 @@ dicho elemento al final de la lista.
 
 insertarFinal :: [Int] -> Int -> [Int]
 insertarfinal lista n = foldr (\x acum -> x:acum) [n] lista
+
+{-
+Intercambiar dos elementos de orden en una lista
+-}
+
+intercambiar :: [Int] -> Int -> Int -> [Int]
+intercambiar (x:xs) y z = if x == y then z:xs else x:(intercambiar (xs) y z)
+
+-- Menor de una lista
+
+menor :: [Int] -> Int
+menor (l:ls) = menorAux ls l 
+
+menorAux :: [Int] -> Int -> Int
+menorAux [] n = n
+menorAux (x:xs) n = if x < n then menorAux xs x else menorAux xs n
