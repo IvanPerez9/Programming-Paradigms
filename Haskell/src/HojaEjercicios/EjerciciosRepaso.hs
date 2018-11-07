@@ -1,4 +1,4 @@
-module HojasEjercicios.HojaEjercicios1 where
+module HojasEjercicios.EjerciciosRepaso where
 
 import Data.Char
 

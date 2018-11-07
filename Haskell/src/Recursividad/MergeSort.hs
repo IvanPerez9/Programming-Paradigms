@@ -14,11 +14,11 @@ mergeSort l = fusionar(mergeSort (a)) (mergeSort (b))
 			  where 
 			  (a,b) = partir l [](length l `div` 2)
 			  
-partir :: [Int]-> [Int] ->Int -> ([Int],[Int])
 -- Lista vacia como acumulador más el contador que es la longitud de la lista, así divides en 2 listas
 -- La mitad de la lista en la vacia y lo que me queda de la original es la otra mitad 
-partir resto acum 0 = ([acum][resto])
-partir (x:xs) acum long = partir xs (acum++[x]) (long-1)
+partir:: [Int]->[Int]->Int->([Int],[Int])
+partir  resto acum 0 = ( acum, resto)
+partir (x:xs) acum long = partir xs (acum++[x]) (long -1)
 
 fusionar :: [Int]->[Int] -> [Int]
 fusionar l [] = l
