@@ -53,9 +53,12 @@ def divisores(num):
 
 def perfecto (num):
     divisores(num)
+    global suma
     for i in range (len(listaDiv)):
-        suma = 0 + listaDiv[i]
-    print("La suma de los divisores de " + str(num) + "es: " + str(suma))
+        suma = suma + listaDiv[i];
+        print(listaDiv[i])
+    
+    print("La suma de los divisores de " + str(num) + " es: " + str(suma))
 
 num = int(input("Introduzca el posible numero perfecto: "))
 perfecto(num)
