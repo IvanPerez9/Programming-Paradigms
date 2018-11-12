@@ -65,4 +65,15 @@ def invertir(var):
     
 cadena = input("Introduzca la cadena a invertir: ")
 print(reverse(cadena))
-print(invertir(cadena))        
+print(invertir(cadena))  
+
+def mayuscula (list):
+    """
+    Devolver la misma cadena solo que con la primera en mayuscula
+    Args: Cadena de caracteres
+    Return: Cadena de caracteres
+    """      
+    return list [0:1].upper() + list [1:]
+
+cadenaMayus = input("Introduzca la cadena para mayusuclas: ")
+print(mayuscula(cadenaMayus))
