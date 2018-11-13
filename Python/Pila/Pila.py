@@ -32,7 +32,7 @@ def balanceados(cadena):
             if len(pila)==0 :
                 print("Cadena desbalanceada")
                 break
-                desapilar(pila)
+            desapilar(pila)
     if len(pila) == 0:
         print("Cadena balanceada")
     else:
