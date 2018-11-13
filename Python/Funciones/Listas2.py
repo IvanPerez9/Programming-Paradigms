@@ -77,3 +77,15 @@ def mayuscula (list):
 
 cadenaMayus = input("Introduzca la cadena para mayusuclas: ")
 print(mayuscula(cadenaMayus))
+
+def area(base = 3, altura = 4):
+     """Calcula el are de un rectángulo.
+     Args:
+     base (Number): base del rectángulo (3).
+     altura (Number): altura del rectángulo (4).
+     return:
+     Number: area del rectángulo """
+     return (base * altura)
+ 
+rectangle = [7, 8]
+area(*rectangle) # Este operador desempaqueta la variable rectangulo
