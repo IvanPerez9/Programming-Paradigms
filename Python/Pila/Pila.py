@@ -15,6 +15,12 @@ def cima(pila):
 
 def encolar(cola, elemento):
     cola.insert(0,elemento)
+
+
+cola = [1,2,3]
+print(cola)
+encolar([1,2,3] ,4)
+print(cola)
     
 def desencolar (cola):
     return cola.pop()
@@ -40,5 +46,35 @@ def balanceados(cadena):
            
 inputCola = input("Introduzca la cadena para parentesis balanceados: ")
 balanceados(inputCola)
+
+#MI BALANCEADO FUNCIONANDO ESTA EN LA HOJA DE REPASO
+
+"""
+def balanceados (cadena):
+    
+    p = []
+    indice = 0
+    while indice < len(cadena):
+        simbolo = cadena[indice]
+        if simbolo == "(":
+            apilar(p, simbolo)
+        elif simbolo == ")":
+            if len(p) == 0:
+                return print("No balanceado")
+            else:
+                desapilar(p)
+
+        indice = indice + 1
+
+    if len(p)==0:
+        return print("Balanceado")
+    else:
+        return print("No balanceado")
+
+
+cadenaPrueba = input("Introduce la cadena para probar ")
+balanceados(cadenaPrueba)
+
+"""
 
 
