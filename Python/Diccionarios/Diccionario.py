@@ -42,5 +42,4 @@ def dice2 (n):
         d [a+b] += 1
         
     print (d)
-    #NOOOPIPOHAMUERTO
 dice2(9)
