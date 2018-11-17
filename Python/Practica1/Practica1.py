@@ -1,7 +1,7 @@
 '''
 Created on 13 nov. 2018
 
-@author: Iván
+@author: Iván REVISAR Y COMENTAR
 '''
 
 #Lista de los numeros (Operandos)
@@ -12,6 +12,11 @@ Created on 13 nov. 2018
 #Funcion isDigits() y Split()
 
 def apilar(pila, elemento):
+    """
+    Inserta un elemento en la pila
+    args: La pila y el elemento
+    return: La pila con el elemento insertado
+    """
     pila.append(elemento)
 
 def desapilar(pila):
@@ -30,6 +35,11 @@ def primero(cola):
     return cola[-1]
 
 def preordenIn (operador):
+    """
+    Funcion que comprense el primer recuador de la practica. Se puede hacer con diccionarios
+    args: El operador en string
+    return: El operador para Puthon
+    """
     if operador == "(" :
         return 0
     elif operador == "+"  or operador == "-" :
@@ -40,6 +50,11 @@ def preordenIn (operador):
         return 3
     
 def preordenOut (operador):
+    """
+    Funcion que comprense el segundo recuador de la practica. Se puede hacer con diccionarios
+    args: El operador en string
+    return: El operador para Puthon
+    """
     if operador == "(" :
         return 5
     elif operador == "+"  or operador == "-" :
@@ -75,6 +90,11 @@ def postFija (lista):
             
     
 def solve (expresion):
+    """
+    Main
+    args: Se le pasa la expresion con la que vamos a operar
+    return: Llamada a resultado
+    """
     l = expresion.split()
     print(l)
     pf = postFija(l)
@@ -82,6 +102,11 @@ def solve (expresion):
     return print(resultado(pf))
  
 def calc (a,b,o):
+    """
+    Operador interno
+    args: Los 3 operadores, el num 1 , el num 2 y el operador
+    return: Los numeros operados
+    """
     if  o == "+" :
         return str(int(a) + int(b))
     elif o == "-":
