@@ -40,7 +40,7 @@ def digitos (num):
     while num :
         l.insert(0 , num %10)
         num //= 10
-    print(l)
+    return l
 
 def digitos2 (n):
     l = []
@@ -96,7 +96,6 @@ def copia (c):
 
 def cubifinitos (n, c = set()): 
     cf = {1} # Conjunto de cubifinitos
-    c = set() # Lista de candidatos
     l = digitos(n)
     s = 0
     for e in l:
@@ -111,7 +110,7 @@ def cubifinitos (n, c = set()):
         cubifinitos(s, c)
         
 
-#cubifinitos(11)
+print(cubifinitos(11,0))
     
 
 
