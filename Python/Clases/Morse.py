@@ -38,16 +38,19 @@ class Morse(object):
     def codificar (self,text):
         r = '';
         for c in text:
-            r += self.morse2str[c] + ' '
+            r += self.str2morse[c] + ' '
             
     def decodificar (self,morse):
         r = '';
         for c in morse.split(): #Diferencio las cadenas de puntos y rayas de morse por los espacios
-            r += self.str2morse[c] + ' '
+            r += self.morse2str[c] + " "
         
         
         
-        
+prueba = Morse()
+
+prueba.decodificar('.... --- .-.. .-   -.-. .- .-. .-   -.-. --- .-.. .- ') ;  
+print(prueba.codificar("HOLA")  ) 
         
         
         

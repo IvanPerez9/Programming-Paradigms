@@ -13,5 +13,6 @@ Son variables de clase o constantes de clase
 
 Inicializar todos los atributos deben de esta ren el init 
 
-Diapo 6: Podemos usar una funcion como atributos de una clase, instanciandolas a una variable. Mantenimiento
+Diapo 6: Podemos usar una funcion como atributos de una clase, instanciandolas a una variable. Mantenimiento.
+pass: Como para grupar variables, dar un valor a una agrupacion de variables. NO DEBERIA USARSE MUCHO
 """
