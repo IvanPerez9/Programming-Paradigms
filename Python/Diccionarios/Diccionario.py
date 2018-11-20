@@ -34,6 +34,8 @@ def characters(s):
             d[c] += 1
     return d
 
+print(characters("HolaaaS"))
+
 def dice2 (n):
     d = {2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0, 10:0, 11:0, 12:0}
     for i in range(n):
@@ -43,3 +45,6 @@ def dice2 (n):
         
     print (d)
 dice2(9)
+
+# d.get(key[, default]) # No existe, default/None 
+# Dame este kay pero si no, pues devuelve lo que le pases como default
