@@ -13,7 +13,9 @@ def pares (lista):
         print(lista[i])
     
 pares(list(range(10)))
+print()
 pares(lista)
+print()
 
 #Funcion que de los numero primos del 1 al N , siendo N < 100
 
@@ -49,16 +51,30 @@ listaDiv = []
 def divisores(num):
     for i in range(1,num):
         if ((num%i) == 0) :
-            return lista.append(i)
+            listaDiv.append(i)
+            print(listaDiv)
+
+
+divisores(9)
 
 def perfecto (num):
-    divisores(num)
-    global suma
-    for i in range (len(listaDiv)):
-        suma = suma + listaDiv[i];
-        print(listaDiv[i])
+    listaDivisores = []
+    for i in range(1, num):
+        if ((num % i) == 0):
+            listaDivisores.append(i)
+    suma = 0
+    for i in range (len(listaDivisores)):
+        suma = suma + listaDivisores[i];
+        print(listaDivisores[i])
     
     print("La suma de los divisores de " + str(num) + " es: " + str(suma))
+    
+    if suma == num :
+        print("Numero perfecto")
+    else:
+        print("Numero no perfecto")
 
 num = int(input("Introduzca el posible numero perfecto: "))
 perfecto(num)
+
+
