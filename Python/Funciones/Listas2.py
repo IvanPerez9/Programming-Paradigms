@@ -13,7 +13,7 @@ def Ternas (listaT):
     Return:
         Cada numero en una terna, teniendo el propio numero, el cuadrado y el cubo del mismo
     """
-    for i in range(len(listaT)):
+    for i in listaT:
         print(str( i) + ", " +str( i**2) + ", " + str(i*i*i) )
 
 Ternas([1,2,3]);
