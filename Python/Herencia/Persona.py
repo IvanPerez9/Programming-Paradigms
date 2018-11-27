@@ -6,6 +6,7 @@ Created on 27 nov. 2018
 '''
 
 import random
+from builtins import ValueError
 
 class Persona(object):
     '''
@@ -69,3 +70,9 @@ p= Persona("Pepe" , 1.8 , 75, "ESP")
 print(p.nombre)
 p2 = SuperPersona("Pepito" , 1.8 , 80, "ITA" )
 print(p2.nombre)
+
+try:
+    x = int(input("Numero: "))
+    print(x)
+except ValueError:
+    print("Introduce un numero")
