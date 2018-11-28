@@ -3,6 +3,8 @@ Created on 20 nov. 2018
 
 @author: Iván
 '''
+from Herencia.Persona import SuperHeroe
+import random
 
 class Heroe(object):
     '''
@@ -138,7 +140,12 @@ class Heroe(object):
 def noticia (superheroe):
     apodos = superheroe.apodos
     print("Se ha vuel a ver a " + apodos.pop() + " en nueva york, " + apodos.pop() + "ha sido visto en Central Park")
-        
+  
+def noticia2 (superheroe):      
+    apodos = superheroe.apodos
+    print("Se ha vuel a ver a " + random.sample(apodos , 1).pop() + " en nueva york, " + apodos.pop() + "ha sido visto en Central Park")
+    #El random sample te saca una lista de 1 elemento, usando pop o [0]
+    # Choice no vale porque requiere indexacion, no vale con set    
         
 class sh:
     def __init__(self,nombre, iterable):

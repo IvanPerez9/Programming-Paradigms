@@ -38,3 +38,7 @@ def get (diccionario, clave, elemento):
         return elemento
         
 print(get({1:"hola"},1,2))
+
+"""
+Decvimal  se tiene que pasar como string, ya que si no se pasa como float y no se puede rep`resentar
+"""
