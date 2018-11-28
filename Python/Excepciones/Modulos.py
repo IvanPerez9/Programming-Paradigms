@@ -82,3 +82,8 @@ s1 = "HHT"
 s2 = "THT"
 
 a,b = win2(s1, s2)
+
+if a>b:
+    print ("ha ganado" , s1 , a)
+else:
+    print("ha ganado" , s2 , b)
