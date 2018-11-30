@@ -8,7 +8,7 @@ Created on 27 nov. 2018
 import random
 from builtins import ValueError
 
-def 
+
 
 class Persona(object):
     '''
