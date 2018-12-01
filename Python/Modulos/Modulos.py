@@ -4,21 +4,22 @@ Created on 28 nov. 2018
 @author: Iván
 '''
 
-import statistics
-import random
 """
 – Reimplementar la función que hacia uso de los apodos de un
 héroe para mostrar un mensaje usando el módulo random
 """
-
 #def noticia (superheroe): DE LA CLASE SUPERHEROE
-
 """
 Dadas propiedades inmobiliarias con tipo y precio, calcular la
 media y mediana por tipo, número de viviendas por rango de
 precios y moda de todas las propiedades.
 """
 #Si tienes un tipo y un valor, casi seguro un diccionario
+
+import random
+import statistics
+
+
 names = {"piso" , "local" , "rustico" , "edificable"} 
 prop = []
 for i in range (100):
@@ -87,3 +88,7 @@ if a>b:
     print ("ha ganado" , s1 , a)
 else:
     print("ha ganado" , s2 , b)
+    
+"""
+La estafa consiste en poner siempre XYZ como -YXZ 
+"""
