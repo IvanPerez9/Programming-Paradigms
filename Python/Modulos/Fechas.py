@@ -3,19 +3,83 @@ Created on 28 nov. 2018
 
 @author: Iván
 '''
-import datetime
-
 """
 Crear una función que reciba una fecha (calendario gregoriano)
 y devuelva el número de días desde el principio del año
 (calendario juliano)
 """
 
+import datetime
+import random
+
+
 f = datetime.date(2018,12,31)
 print(f.strftime("%j"))
 
 """
-Teoria sobre fechas:
+Crear la función inversa a la anterior
+"""
 
+#g = datetime.datetime.strftime("12345" , "%y%j").date()
+#print(g)
 
 """
+ Paradoja del cumpleaños:
+    • ¿Cuántas personas tiene que haber en una habitación para que 2
+    de ellas cumplan los años el mismo día?
+    
+    • Crear una función que devuelva una fecha aleatoria (mes y día)?
+    
+    • Crear una función que guarda fechas aleatorias hasta que dos
+    coincidan (en mes y día) guardando cuantas ha generado.
+    
+    • Crear una función que repite el experimento anterior N veces. De
+    media, ¿cuántas personas tiene que haber en la habitación para
+    que al menos 2 cumplan años el mismo día?
+    
+"""
+print("Ejercicio Paradoja cumpleaños: \n")
+
+
+def fechaRandom ():
+
+    fechaini = datetime.date(1900,1,1)
+    fechafin = datetime.date (2019,1,1)
+    
+    random_date = fechaini + (fechafin - fechaini) * random.random()
+    return random_date.strftime('%d %m') 
+
+print(fechaRandom())
+
+def fechaGuardar ():
+    
+    """
+    Uso una lista para almacenar fechas
+    """
+    
+    guardar = []
+    coinciden = False
+    
+    while not coinciden :
+        fecha = fechaRandom()
+        if fecha not in guardar:
+            guardar.append(fecha)
+        else:
+            #guardar.pop(fecha)
+            coinciden = True
+        
+    return ( len(guardar))
+    #return ("Coincide: " + datetime.date.strftime(fecha) + "y ha calculado: " + len(guardar))
+
+print("Ha calculado: " + str(fechaGuardar()))
+
+def fechaPersonas(n):
+    suma = 0;
+    media = 0;
+    for i in range(n):
+        suma += fechaGuardar()
+    
+    media = suma / n 
+    return media
+        
+print("De media: " + str(fechaPersonas(10)))         
