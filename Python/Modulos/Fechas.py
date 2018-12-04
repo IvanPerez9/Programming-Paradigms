@@ -20,8 +20,8 @@ print(f.strftime("%j"))
 Crear la función inversa a la anterior
 """
 
-#g = datetime.datetime.strftime("12345" , "%y%j").date()
-#print(g)
+g = datetime.datetime.strptime("365" , "%j")
+print(g)
 
 """
  Paradoja del cumpleaños:
@@ -45,11 +45,25 @@ def fechaRandom ():
 
     fechaini = datetime.date(1900,1,1)
     fechafin = datetime.date (2019,1,1)
-    
-    random_date = fechaini + (fechafin - fechaini) * random.random()
-    return random_date.strftime('%d %m') 
 
-print(fechaRandom())
+    dia = random.randint (1,365)
+    return datetime.datetime.strptime(str(dia), "%j")
+
+    # Mio anterior
+    #random_date = fechaini + (fechafin - fechaini) * random.random()
+    #return random_date
+
+fechaRandom()
+
+def fechaGuardar2 ():
+    s = set();
+    d = fechaRandom();
+    while d not in s:
+        s.add(d)
+        d = fechaRandom()
+    return len(s) + 1 , s ,d
+
+print(fechaGuardar2())
 
 def fechaGuardar ():
     
@@ -68,18 +82,28 @@ def fechaGuardar ():
             #guardar.pop(fecha)
             coinciden = True
         
-    return ( len(guardar))
-    #return ("Coincide: " + datetime.date.strftime(fecha) + "y ha calculado: " + len(guardar))
+    return len(guardar)+1
+    #return ("Coincide: " + fecha.str + "y ha calculado: " + str(len(guardar)))
 
 print("Ha calculado: " + str(fechaGuardar()))
 
 def fechaPersonas(n):
     suma = 0;
     media = 0;
+    """
+    Si me vienen en una tupla, puedes poner variables con comas 
+    a,b,c = fechaGuardar2()
+    si no usas b y c , puedes poner a,_,_ 
+    
+    O puedes usar indices de tuplas,  suma += suma + fechasGuardar2() [0] 
+    """
     for i in range(n):
         suma += fechaGuardar()
     
     media = suma / n 
     return media
         
-print("De media: " + str(fechaPersonas(10)))         
+print("De media: " + str(fechaPersonas(10)))
+
+# ahora.strftime(“%d-%m-%y. %d %b %y. %A, %d %B %Y.”)
+# Dia mes y año , pero en distintos formatos. Formato corto, uno más largo
