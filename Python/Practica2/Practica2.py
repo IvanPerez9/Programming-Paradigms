@@ -22,6 +22,20 @@ utilizará el módulo numpy para crear la imagen junto a las siguientes funcione
  Definir una función que permite modificar el valor de un pixel de la imagen.
 """
 
+"""
+El rasterizador más sencillo de construir es el que permite rasterizar un rectángulo alineado a los
+ejes (AABB – axis aligned bounding box). Se pide:
+
+ Definir el tipo de dato que representa un rectángulo.
+Puede ser conveniente definir otros tipos de datos como puntos y/o vértices.
+Un rectángulo alineado con los ejes está definido por 2 puntos, su esquina superior izquierda y
+su esquina inferior derecha.
+ Crear un método que rasterice un rectángulo alineado.
+Recibirá una imagen, el rectángulo y el color (un entero).
+Por cada pixel de la imagen (elemento de la matriz) comprobará si cae dentro del área del
+rectángulo, de ser así cambiará su valor por el color recibido
+"""
+
 def clearscreen (screen): # Borrar la pantalla
     return screen.fill(0)
 
@@ -39,7 +53,7 @@ def rasterizar (screen, rect, value): #Valor es el color
     for i in range(fila):
         for j in range(columna):
             if estaDentro(rect, j, i):
-                screen[i][j] = value; # Pintarlo
+                screen[i][j] = value # Pintarlo
 
 if __name__ == "__main__":
     screen = np.zeros((10,10))
@@ -54,7 +68,7 @@ if __name__ == "__main__":
     print(r.min.x)
     rasterizar(screen, r , 2)
     print(screen)
-    """
+    """ PRUEBAS
     setPixel(screen, 2,3,4) # Fila 2, columna 3 poner un 4
     print(screen)
     screen[0] = 2
@@ -64,20 +78,13 @@ if __name__ == "__main__":
     """
 
 """
-El rasterizador más sencillo de construir es el que permite rasterizar un rectángulo alineado a los
-ejes (AABB – axis aligned bounding box). Se pide:
+Básicamente, lo que haces usando if __name__ == “__main__”: es ver si el módulo ha sido importado o no. 
+Si no se ha importado (se ha ejecutado como programa principal) ejecuta el código dentro del condicional.
 
- Definir el tipo de dato que representa un rectángulo.
-Puede ser conveniente definir otros tipos de datos como puntos y/o vértices.
-Un rectángulo alineado con los ejes está definido por 2 puntos, su esquina superior izquierda y
-su esquina inferior derecha.
- Crear un método que rasterice un rectángulo alineado.
-Recibirá una imagen, el rectángulo y el color (un entero).
-Por cada pixel de la imagen (elemento de la matriz) comprobará si cae dentro del área del
-rectángulo, de ser así cambiará su valor por el color recibido
+Una de las razones para hacerlo es que, a veces, se escribe un módulo (un archivo .py) que se puede ejecutar 
+directamente, pero que alternativamente, también se puede importar y reutilizar sus funciones, clases, métodos,
+etc en otro módulo. Con esto conseguimos que la ejecución sea diferente al ejecutar el módulo directamente 
+que al importarlo desde otro programa.
 """
-###
 
-
-
-
+######
