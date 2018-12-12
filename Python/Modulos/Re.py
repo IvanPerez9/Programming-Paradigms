@@ -37,6 +37,19 @@ def space (str):
 
 def cuenta (str):
     return len(re.findall(r"\besta\b" , str)) #Hay que ponerlo la r delante para que no interprete las \ y mirar los \b en la documentacion (palabras)
+    # \b match solo con cadenas vacias a principio y final . Sirve para delimitar palabras
+
+def rename (list):
+    """
+    Renombra idfjsdogjs
+    :param list: lista de numeros
+    :return: lista de cadenas
+    """
+    n = len(str(max(list)))
+    r = []
+    for e in list:
+        r.append(str(e).zfill(n+1)) #Rellena la cadena para tener n+1 digitos
+    return r
 
 if __name__ == "__main__" :
     r = re.match("ab*" , "abbbbcccc")
@@ -80,6 +93,10 @@ if __name__ == "__main__" :
     • Compile: permite preprocesar un patrón, generar el patron en una variable
     """
 
+    # re.match ("r(.+) \1" , string)  Cualquier ocurrencia espacio en blanco y la ocurrencia otra vez
+    # El 1 llama al primer gurpo ()
+    # Poner r delante para que no pille \
+
     #Crea una función que devuelva si una cadena es un identificador valido para una variable.
 
     r9 = re.match("[_]*[a-z]+[_0-9a-zA-Z]*$" , "shape") # El $ por si pones 2 palabras
@@ -88,7 +105,9 @@ if __name__ == "__main__" :
     #Crear una función que devuelva si una cadena es una contraseña valida con números y letras.
 
     r10 = re.match("[_0-9a-zA-Z]{8}[_0-9a-zA-Z]*$", "shape09898")
+    #r10 = re.match(r"([_0-9a-zA-Z]){8}\1*$", "shape09898") No puedo usar los grupos, pero es para entenderlos
     print(r10)
+
 
     #– Crear una función que devuelva si una subcadena esta contenida en un string.
 
@@ -103,3 +122,22 @@ if __name__ == "__main__" :
     r13 = re.findall("esta" , "estasiquenoestaenestacadena esta")
     print(cuenta("esta estanteria esta estestada")) # Asi cuenta subcadenas
 
+    # – Crear una función que dada una lista de números [1, 3, 10, 23]
+    # devuelva [‘001’, ‘003’, ‘010’, ‘023’]
+
+    # Usar max que te devuelve el maximo de una lista, y usar len() para ver si es unidades/decenas o que
+    # Quiero pasar de lisa de numeros a lista de string
+    """Subprograma rename"""
+
+    print(rename([1,3,10,23]))
+
+    # – Crear una función que devuelva texto entrecomillado dentro de una cadena
+
+    r14 = re.findall(r'".*?"' , 'Hola "que" tal "estas" ') # Si con match solo la primera
+    print(r14)
+
+
+    """
+    3 o 4 preguntas teoria, y luego preguntas de codigo de conceptos. De tipo test y desarrollar de codigo
+    Caracteristicas de lista, set y tal
+    """
