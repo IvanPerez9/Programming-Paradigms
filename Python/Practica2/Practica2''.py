@@ -71,8 +71,8 @@ if __name__ == "__main__" :
     r11 = Recta(s, l)
     r22 = Recta(l, p)
     r33 = Recta(p, s)
-    t = Triangle(r, r1, r2)
-    t2 = Triangle(r11, r22, r33)
+    t = Triangle(p, q, s)
+    t2 = Triangle(s, l, q)
 
     rasterize(screen, t , t2 , 4)
     print(screen)
