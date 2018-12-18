@@ -300,3 +300,36 @@ def conjunto_potencia(a_set):
 
 print(conjunto_potencia([1, 2, 3, 4, 5]))
 
+"""
+Crear una función que devuelva el conjunto cartesiano de dos
+conjuntos (conjunto con todos los pares del primero con el
+segundo).
+"""
+print("Cartesianos")
+def cartesianos (c1,c2):
+    c = set()
+    for i in c1:
+        for e in c2:
+            c.add((e,i))
+    return c
+
+print(cartesianos({1,2},{3,4,5}))
+
+#– Crear una función que devuelva el número de apariciones de
+# cada carácter en una cadena.
+
+#Añadir al diccionario con C
+
+def characters(s):
+    d = {}
+    for c in s:
+        if c not in d:
+            d[c] = 1 # Clave c con valor 1
+        else:
+            d[c] += 1
+    return d
+
+print(characters("HolaaaS"))
+
+#Crear una función que devuelva el número de apariciones de cada palabra en una frase
+
