@@ -3,6 +3,7 @@ Created on 18 dec. 2018
 
 @author: Iván
 '''
+import random
 """
 SLICE
 
@@ -333,3 +334,29 @@ print(characters("HolaaaS"))
 
 #Crear una función que devuelva el número de apariciones de cada palabra en una frase
 
+def cuentaPalabras (cadena):
+    d = dict()
+    palabras = cadena.split()
+    for i in palabras:
+        if i not in d:
+            d[i] = 1
+        else:
+            d[i] += 1
+    return d
+
+print(cuentaPalabras("Hola que tal estás que))
+
+#– Utilizando el modulo random, crear una función que simule N
+# tiradas de 2 dados y cuente las veces que aparece un resultado.
+
+def tiradas (n):
+    d = {2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0,11:0,12:0} #Clave valor de todos los posibles valores
+    for i in range(n):
+        random1 = random.randint(1,6)
+        random2 = random.randint(1,6)
+        d[random1+random2] += 1 
+        #Acceso a la clave del diccionario directamente
+    print(d)
+    
+
+tiradas(5)
