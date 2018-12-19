@@ -344,7 +344,7 @@ def cuentaPalabras (cadena):
             d[i] += 1
     return d
 
-print(cuentaPalabras("Hola que tal estás que))
+print(cuentaPalabras("Hola que tal estás que"))
 
 #– Utilizando el modulo random, crear una función que simule N
 # tiradas de 2 dados y cuente las veces que aparece un resultado.
@@ -360,3 +360,71 @@ def tiradas (n):
     
 
 tiradas(5)
+
+#Reimplementacion de contar caracteres con get
+
+def contarReimplementado (c):
+    d = dict()
+    for i in c:
+        d[c] = d.get(c,0) + 1 #La clave y el default si no la encuentra (0)
+    return d
+
+print(contarReimplementado("Holaaa"))
+
+#Crear una función que devuelva el diccionario inverso.
+
+def inversoDic (dic):
+    k = dic.keys()
+    v = dic.values()
+    d = dict(zip(v,k))
+    return d
+
+d = {"Uno" : 1, "Dos" :2 , "Tres":3}
+print(inversoDic(d))
+
+#Crear una función que gestione una agenda, permitirá agregar
+#números de teléfono a personas.
+
+agenda = {"Pepe" : 123 , "Maria" : 456}
+
+def agregar (t,n,agenda):
+    if n not in agenda.keys():
+        agenda[n] = t
+    else:
+        agenda[n] = agenda.get(n,set(t))
+
+print(agenda)
+agregar(128,"Ivan" , agenda)
+print(agenda)
+
+def eliminar (n,agenda):
+    if n in agenda.keys():
+        agenda.pop(n)
+
+eliminar("Ivan" , agenda)
+print(agenda)
+
+# Crear una función que escribe una cadena en Morse.
+
+
+def morseTraduccion (cadena):
+    morse = {'A': '.-', 'B': "-...", 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--', 'H': '....', 'I': '..',
+             'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'Ñ': '--.--', 'O': '---', 'p': '.--.',
+             'Q': '--.-',
+             'R': '.-.', 'S': '...', 'T': '-', 'U': '..--', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--',
+             'Z': '--..',
+             '0': '-----', '1': '.----', '2': '..---', '3': ':...--', '4': '....-', '5': '.....', '6': '-....',
+             '7': '--...', '8': '---..', '9': '----.', '.': '.-.-.-', ',': '-.-.--', '?': '..--..', '"': '.-..-.',
+             '!': '--..--'}
+    traducido = []
+    palabras = cadena.split()
+    for e in palabras:
+        traducido.append(morse.get(e))
+        traducido.append(" ")
+
+    cadena1 = ''.join(str(traducido))
+    print(traducido)
+    print(str(cadena1))
+
+
+print(morseTraduccion("HOLA QUE TAL"))
