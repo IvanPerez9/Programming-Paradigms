@@ -10,29 +10,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/Clases/SuperHeroe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="170" column="50" selection-start-line="170" selection-start-column="50" selection-end-line="170" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
+            <state relative-caret-position="288">
+              <caret line="168" column="18" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/RepasoSet.py">
+        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="187" column="45" lean-forward="true" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
+            <state relative-caret-position="264">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -74,8 +65,8 @@
         <option value="$PROJECT_DIR$/Python/Repaso/Practica1.py" />
         <option value="$PROJECT_DIR$/Python/Clases/Morse.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoMorse.py" />
-        <option value="$PROJECT_DIR$/Python/Clases/SuperHeroe.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py" />
+        <option value="$PROJECT_DIR$/Python/Clases/SuperHeroe.py" />
       </list>
     </option>
   </component>
@@ -507,17 +498,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Clases/SuperHeroe.py">
+    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="170" column="50" selection-start-line="170" selection-start-column="50" selection-end-line="170" selection-end-column="50" />
+        <state relative-caret-position="264">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py">
+    <entry file="file://$PROJECT_DIR$/Python/Clases/SuperHeroe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="93" selection-start-line="18" selection-start-column="93" selection-end-line="18" selection-end-column="93" />
+        <state relative-caret-position="288">
+          <caret line="168" column="18" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
         </state>
       </provider>
     </entry>
