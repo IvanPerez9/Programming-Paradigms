@@ -3,7 +3,6 @@ Created on 20 nov. 2018
 
 @author: Iván
 '''
-from Herencia.Persona import SuperHeroe
 import random
 
 class Heroe(object):
@@ -168,3 +167,9 @@ class villano (sh):
         
 lex = villano("Lex Luthor" , [("Rico", 0) , ("Listo" , 1)])
 print(lex.poderes)
+
+superheroe = Heroe("Spiderman" , "EEUU" , "1,80", "80kg" , ["Maquina"], [])
+superheroe.añadirApodo("Spiderman")
+superheroe.añadirApodo("Spidey")
+
+noticia(superheroe)
