@@ -33,20 +33,23 @@ class Morse(object):
 
     #Lo guarod en r que es un string para poder imprimirlo 
     def codificar (self,text):
-        r = '';
+        r = ''
         for c in text.upper():
             r += self.str2morse[c] + ' '
+        return r
+
             
     def decodificar (self,morse):
         r = '';
         for c in morse.split(): #Diferencio las cadenas de puntos y rayas de morse por los espacios
             r += self.morse2str[c] + " "
+        return r
         
         
         
 prueba = Morse()
 
-prueba.decodificar('.... --- .-.. .-   -.-. .- .-. .-   -.-. --- .-.. .- ') ;  
+print(prueba.decodificar('.... --- .-.. .-   -.-. .- .-. .-   -.-. --- .-.. .- '))
 print(prueba.codificar("HOLA")  ) #Importante mayusculas
         
         
