@@ -56,9 +56,10 @@ class SuperPersona (Persona):
         estatura = (int(self.estatura + pareja.estatura)) // 2
         peso = (int(self.peso + pareja.peso)) // 2
         nacionalidad = self.nacionalidad + pareja.nacionalidad
+        apodos = str(self.apodos) + str(pareja.apodos)
 
         poderes = set()
-        union = self.poderes | pareja.poderes #Union de todos los poderes
+        union = set().union(self.poderes, pareja.poderes) #Union de todos los poderes
         for e in union:
             prob = 0
             if e in self.poderes and e in pareja.poderes:
@@ -70,7 +71,7 @@ class SuperPersona (Persona):
             if random.random() <= pf:  # Random de 0 a 1 , por eso esas probabilidades
                 poderes.add(e)
 
-        return SuperPersona(nombre,estatura,peso,nacionalidad,poderes)
+        return SuperPersona(nombre,estatura,peso,nacionalidad,poderes,apodos)
 
 
 class SuperHeroe (SuperPersona):
@@ -94,10 +95,12 @@ class Villano (SuperPersona):
 
 p= Persona("Pepe" , 1.8 , 75, "ESP")
 print(p.nombre)
-p2 = SuperPersona("Pepito" , 1.8 , 80, "ITA", {"Escalar", "Super Salto"}, {"Pep"} )
+p2 = SuperPersona("Pepito" , 1.8 , 80, "ITA", ["Escalar", "Super Salto"], ["Pep"] )
 print(p2.nombre)
 print(p2.poderes)
-p3 = SuperPersona("WonderWoman" , 1.8 , 80, "ESP", {"Super Fuerza"} , {"WW"} )
+p3 = SuperPersona("WonderWoman" , 1.8 , 80, "ESP", ["Super Fuerza"] , ["WW"] )
 print(p3.nombre)
 
 print(p3.descendencia(p2))
+
+#Mirar union,diferencia etc y la indexacion con set y diccionarios 
