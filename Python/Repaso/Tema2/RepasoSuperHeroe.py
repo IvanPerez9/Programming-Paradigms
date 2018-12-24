@@ -50,6 +50,32 @@ class SuperHeroe (object):
 
     #Funcion que muestre una noticia por distintos apodos
 
+    #Entrada salida
+
+    def almacenarSuper(self):
+        with open("File.txt" , "w") as f:
+            f.write("Nombre: " + self.nombre + "\n")
+            f.write("Nacionalidad" + self.nacionalidad + "\n")
+            f.write("Estatura" + self.estatura + "\n")
+            f.write("Peso" + self.peso + "\n")
+            f.write("Poderes: ")
+            for i in self.poderes:
+                f.write(i + " ")
+            f.write("\n")
+            f.write("Apodos: ")
+            for a in self.apodos:
+                f.write(a + " ")
+
+    def cargarSuper(self):
+        with open("File.txt" , "r") as f:
+            line = f.readline()
+            self.nombre = line.split(":") [1:]
+            self.nacionalidad = line.split(":") [1:]
+            self.peso = line.split(":") [1:]
+            self.estatura = line.split(":") [1:]
+            self.poderes = line.split(":")[1].split(" ")
+            self.apodos = line.split(":")[1].split(" ")
+
 
 superheroe = SuperHeroe("Spiderman" , "EEUU" , "1,80", "80kg" , ["Maquina","Spidey"], [])
 superheroe.quitarApodo("Maquina")
@@ -65,3 +91,13 @@ def noticia(superheroe):
     print("Se ha vuel a ver a " + apodos.pop() + " en nueva york, " + apodos.pop() + " ha sido visto en Central Park")
 
 noticia(superheroe)
+
+"""
+Base de datos de superheroes
+
+Funcion para registrar en un fichero a nuestros superheroes -> Entrada Salida
+
+Funcion para cargar nuestra coleccion de superheroes -> Entrada salida
+
+
+"""
