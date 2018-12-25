@@ -59,7 +59,7 @@ class SuperPersona (Persona):
         apodos = str(self.apodos) + str(pareja.apodos)
 
         poderes = set()
-        union = set().union(self.poderes, pareja.poderes) #Union de todos los poderes
+        union = set().union(self.poderes, pareja.poderes) #Union de todos los poderes, casteo a set
         for e in union:
             prob = 0
             if e in self.poderes and e in pareja.poderes:
@@ -71,8 +71,9 @@ class SuperPersona (Persona):
             if random.random() <= pf:  # Random de 0 a 1 , por eso esas probabilidades
                 poderes.add(e)
 
-        return SuperPersona(nombre,estatura,peso,nacionalidad,poderes,apodos)
+        hijo = SuperPersona(nombre,estatura,peso,nacionalidad,poderes,apodos)
 
+        return hijo
 
 class SuperHeroe (SuperPersona):
     
@@ -100,7 +101,9 @@ print(p2.nombre)
 print(p2.poderes)
 p3 = SuperPersona("WonderWoman" , 1.8 , 80, "ESP", ["Super Fuerza"] , ["WW"] )
 print(p3.nombre)
+print(p3.poderes)
+print("--un")
+p4 = p3.descendencia(p2)
+print(p4.poderes)
 
-print(p3.descendencia(p2))
-
-#Mirar union,diferencia etc y la indexacion con set y diccionarios 
+#Mirar union,diferencia etc y la indexacion con set y diccionarios

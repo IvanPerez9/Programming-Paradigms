@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+            <state relative-caret-position="236">
+              <caret line="61" column="99" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -22,7 +22,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Herencia/Persona.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="1518">
               <caret line="70" selection-start-line="70" selection-end-line="73" selection-end-column="16" />
               <folding>
                 <element signature="e#49#62#0" expanded="true" />
@@ -46,6 +46,7 @@
       <find>Recta</find>
       <find>3</find>
       <find>isprim</find>
+      <find>union</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -498,20 +499,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="61" column="99" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python/Herencia/Persona.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="1518">
           <caret line="70" selection-start-line="70" selection-end-line="73" selection-end-column="16" />
           <folding>
             <element signature="e#49#62#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
         </state>
       </provider>
     </entry>
