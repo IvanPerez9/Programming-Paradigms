@@ -42,18 +42,14 @@ print("Ejercicio Paradoja cumpleaños: \n")
 
 
 def fechaRandom ():
-
-    fechaini = datetime.date(1900,1,1)
-    fechafin = datetime.date (2019,1,1)
-
-    dia = random.randint (1,365)
-    return datetime.datetime.strptime(str(dia), "%j")
+    random_date = random.randint(1, 365)
+    return datetime.datetime.strptime(str(random_date), "%j")
 
     # Mio anterior
     #random_date = fechaini + (fechafin - fechaini) * random.random()
     #return random_date
 
-fechaRandom()
+print(fechaRandom())
 
 def fechaGuardar2 ():
     s = set();
