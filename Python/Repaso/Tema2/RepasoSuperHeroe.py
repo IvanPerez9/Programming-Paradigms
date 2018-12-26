@@ -3,6 +3,7 @@ Created on 23 dec. 2018
 
 @author: Iván
 '''
+import random
 
 class SuperHeroe (object):
 
@@ -77,7 +78,7 @@ class SuperHeroe (object):
             self.apodos = line.split(":")[1].split(" ")
 
 
-superheroe = SuperHeroe("Spiderman" , "EEUU" , "1,80", "80kg" , ["Maquina","Spidey"], [])
+superheroe = SuperHeroe("Spiderman" , "EEUU" , "1,80", "80kg" , ["Maquina","Spidey", "Arañita"], [])
 superheroe.quitarApodo("Maquina")
 superheroe.añadirApodo("Spiderman")
 for i in range(len(superheroe.apodos)):
@@ -88,9 +89,14 @@ print("---")
 
 def noticia(superheroe):
     apodos = superheroe.apodos
-    print("Se ha vuel a ver a " + apodos.pop() + " en nueva york, " + apodos.pop() + " ha sido visto en Central Park")
+    print("Se ha vuelto a ver a " + apodos.pop() + " en nueva york, " + apodos.pop() + " ha sido visto en Central Park")
 
-noticia(superheroe)
+def noticia2 (superheroe):
+    apodos = superheroe.apodos
+    print("Se ha vuelto a ver a " + random.sample(apodos, 1).pop() + " en nueva york, " + random.sample(apodos,2).pop() + " ha sido visto en Central Parl")
+
+#noticia(superheroe)
+noticia2(superheroe)
 
 """
 Base de datos de superheroes
@@ -99,5 +105,9 @@ Funcion para registrar en un fichero a nuestros superheroes -> Entrada Salida
 
 Funcion para cargar nuestra coleccion de superheroes -> Entrada salida
 
+"""
 
+"""
+Reimplementar la función que hacia uso de los apodos de un
+héroe para mostrar un mensaje usando el módulo random.
 """
