@@ -48,7 +48,7 @@ def guardarCoinciden ():
     cuantas = 0
     lista = list() #[]
     fechaA = fechaAleatoria()
-    while fehcaA not in lista:
+    while fechaA not in lista:
         cuantas += 1
         lista.append(fechaA)
         fechaA = fechaAleatoria()
@@ -65,7 +65,7 @@ def guardarNveces (n):
     while contador < n :
         interno = guardarCoinciden()
         suma += interno[1]
-        contadoe += 1
+        contador += 1
     return (suma // contador)
 
 print("De media se necesitan: " + str(guardarNveces(10)))
