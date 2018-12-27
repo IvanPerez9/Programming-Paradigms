@@ -43,3 +43,32 @@ def fechaAleatoria ():
     return datetime.datetime.strptime(str(random_date), "%j")
 
 print(fechaAleatoria())
+
+def guardarCoinciden ():
+    cuantas = 0
+    lista = list() #[]
+    fechaA = fechaAleatoria()
+    while fehcaA not in lista:
+        cuantas += 1
+        lista.append(fechaA)
+        fechaA = fechaAleatoria()
+    return fechaA , cuantas
+    
+prueba = guardarCoinciden()
+print("La fecha: " + str(prueba[0]) + " coincide, y ha guardado: " + str(prueba[1]))
+
+#Se repita N veces
+
+def guardarNveces (n):
+    contador = 0
+    suma = 0
+    while contador < n :
+        interno = guardarCoinciden()
+        suma += interno[1]
+        contadoe += 1
+    return (suma // contador)
+
+print("De media se necesitan: " + str(guardarNveces(10)))
+        
+
+
