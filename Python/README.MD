@@ -9,3 +9,27 @@ __1. Tema 1__
 * __1.3__ Set: Ejercicios de colecciones
 * __1.4__ Pila: Ejercicios restantes de Listas y Pilas
 * __1.5__ Diccionarios: Ejercicios de diccionarios (diccionarios1, diccionario2) -> Morse en Clase
+
+
+__2. Tema 2__
+
+* __2.1__ Clases: Ejercicios relacionados con la creacion de clases y metodos de clase.
+  * __2.1.1__ Clase Morse
+  * __2.1.2__ Clase superHeroe
+  * __2.1.3__ Teoria
+* __2.2__ Excepciones : Ejercicios de excepciones
+* __2.3__ Herencia: Ejercicios relacionados con la clase Super heroe
+  
+  
+ __3. Prácticas__
+
+* __3.1__ Practica 1: Evaluación de expresiones aritméticas sencillas.
+* __3.2__ Practica 2: Rasterizador.
+  
+  
+ __4. Repaso__
+
+* __4.1__ Mismo ejercicios pero de repaos pre examen.
+  * __4.1.1__ Repaso Tema 1.
+  * __4.1.2__ Repaso Tema 2.
+  * __4.1.3__ Repaso Practicas.
