@@ -85,17 +85,19 @@ r9 = re.findall(r" '.*? " , "Hola 'Ivan' que tal ")
 print(r9)
 
 #Crear una función que devuelve si una cadena es capicúa.
+print("\n")
 
 def capicua(cadena):
+    print("Funcion capicua con: " + cadena)
     indice = -1
     contador = 0
-    for e in range(0,len(cadena)/2):
+    for e in range(0,len(cadena)):
         if cadena[e] == cadena[indice]:
             indice -= 1
-            contado += 1
-    if contador == (len(cadena)/2):
+            contador += 1
+    if contador == (len(cadena)):
         return print("Es capicua")
     else:
         return print("No es capicua")
             
-capicua()        
+capicua("121")
