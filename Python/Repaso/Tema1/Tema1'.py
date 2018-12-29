@@ -191,17 +191,15 @@ una función que reciba un número y devuelva si es cubifinito
 
 #– Implementar las funciones sobre conjunto, unión, intersección, diferencia y copia.
 
-def union (c1,c2):
-    c3 = set()
-    c3.union(c1)
-    c3.union(c2)
+def union (c1,c2): # | union
+    c3 = c1 | c2
     return c3
 
 c1 = {1,2}
 c2 = {3,4,5}
 c3 = {3,4,7}
 c4 = {1,2,3}
-union(c1,c2)
+print(union(c1,c2))
 
 def union2 (c1,c2):
     c = set()
@@ -211,24 +209,27 @@ def union2 (c1,c2):
         c.add(i)
     return  c
 
+print(union2(c1,c2))
 
-def interseccion(c1, c2):
-    c = set()
-    for e in c1:
-        for e in c2:
-            c.add(e)
-
+def interseccion(c1, c2): #Interseccion
+    c = c1 & c2
     return c
 
-interseccion(c1,c4)
+print("Interseccion" + str(interseccion(c1,c4)))
 
 def diferencia (c1,c2):
     c = set()
     for i in c1:
         for i in not c2:
             c.add(i)
-
     return c
+
+def diferencia2(c1, c2): #Interseccion
+    c = c1 - c2
+    return c
+
+#print("Diferencia" + str(diferencia(c3,c2)))
+print("Diferencia2" + str(diferencia2(c3,c2)))
 
 
 """
