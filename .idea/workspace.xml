@@ -11,10 +11,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoRE.py">
+        <entry file="file://$PROJECT_DIR$/Python/Repaso/Practica2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+            <state relative-caret-position="308">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+              <folding>
+                <element signature="e#46#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/Practica2/Practica2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+              <folding>
+                <element signature="e#46#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,6 +51,7 @@
       <find>isprim</find>
       <find>union</find>
       <find>and</find>
+      <find>recta</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,6 +83,7 @@
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoFechas.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoRE.py" />
+        <option value="$PROJECT_DIR$/Python/Repaso/Practica2.py" />
       </list>
     </option>
   </component>
@@ -97,21 +114,13 @@
               <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
               <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
+              <item name="Practica2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
               <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Repaso" type="462c0819:PsiDirectoryNode" />
-              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Repaso" type="462c0819:PsiDirectoryNode" />
-              <item name="Tema2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,8 +151,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.RepasoRE">
-    <configuration name="Fechas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Practica2 (2)">
+    <configuration name="Practica2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,11 +160,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Modulos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Repaso" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Modulos/Fechas.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Iván\Documents\GitHub\Paradigmas\Python\Repaso\Practicas\Practica2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +173,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RepasoFechas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Practica2 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,11 +181,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Repaso/Tema2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Repaso/Practicas" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoFechas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Repaso/Practicas/Practica2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,7 +194,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RepasoModulos" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Practica2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -193,11 +202,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Repaso/Tema2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Practica2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoModulos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Practica2/Practica2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Practica2 (2)" />
+        <item itemvalue="Python.Practica2 (1)" />
+        <item itemvalue="Python.Practica2" />
         <item itemvalue="Python.RepasoRE" />
         <item itemvalue="Python.Tema1'" />
-        <item itemvalue="Python.RepasoFechas" />
-        <item itemvalue="Python.Fechas" />
-        <item itemvalue="Python.RepasoModulos" />
       </list>
     </recent_temporary>
   </component>
@@ -325,16 +334,6 @@
           <caret selection-end-line="4" selection-end-column="3" />
           <folding>
             <element signature="e#47#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Practica2/Practica2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="44" column="54" lean-forward="true" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-          <folding>
-            <element signature="e#46#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,6 +524,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Practica2/Practica2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Repaso/Practica2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+          <folding>
+            <element signature="e#46#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
