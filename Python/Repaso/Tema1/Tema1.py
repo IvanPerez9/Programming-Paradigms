@@ -146,9 +146,26 @@ def perfecto (num):
     else:
         return print("No es perfecto")
 
+def sumaL (l):
+    suma = 0
+    for i in range(len(l)):
+        suma += l[i]
+    return suma
+
+def perfecto2 (n):
+    l = []
+    for i in range(1,n):
+        if n % i == 0:
+            l.append(i)
+    if n == sumaL(l):
+        return print("Es perfecto")
+    else:
+        return print("No es perfecto")
 
 perf = int(input("Introduzca el numero que desea comprobar si es perfecto: "))
 perfecto(perf)
+print("-")
+perfecto2(perf)
 
 #Crear una función que recibe una lista de números y devuelve
 #una lista de tuplas por cada elemento. Cada tupla tendrá el
