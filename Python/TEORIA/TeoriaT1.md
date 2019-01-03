@@ -83,4 +83,6 @@ __1. Tema 1__
              `d.values() # lista de valores`
              
              `d.items() # lista de clave valor`
+             
+          - Acceso a la clave directamente d[ i ] . Incluso modificar  el valor de esa clave con d[ i ] = 8 
    
