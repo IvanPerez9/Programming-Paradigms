@@ -83,4 +83,14 @@ __1. Tema 1__
              `d.values() # lista de valores`
              
              `d.items() # lista de clave valor`
+             
+          - Acceso a la clave directamente d[ i ] . Incluso modificar  el valor de esa clave con d[ i ] = 8 
+          - Para acceder al valor asociado a una determinada clave, se lo hace de la misma forma que con las listas, pero utilizando la             clave elegida en lugar del índice.
+
+            `print materias["lunes"]`
+         
+          - Sin embargo, esto falla si se provee una clave que no está en el diccionario. Es posible, por otro lado, utilizar la función             get, que devuelve el valor None si la clave no está en el diccionario, o un valor por omisión 
+            que se establece opcionalmente.
+
+          - Para verificar si una clave se encuentra en el diccionario, es posible utilizar la función has_key o la palabra reservada in
    
