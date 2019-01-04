@@ -79,7 +79,7 @@ __1. Tema 2__
         - (?) : La RE previa 0 o 1 vez. Modo no voraz
         - {m} : La RE previa m veces
         - {n,m} : La RE previa entre n y m veces
-        - [ ] : Cualquier caracter del set
+        - [_] : Cualquier caracter del set
         - [^] : Cualquier caracter que no sea del set
         
         - Se puede agrupar varias RE entre ( ) y luego hacerlas referencia con \nº
