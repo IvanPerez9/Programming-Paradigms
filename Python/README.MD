@@ -33,3 +33,8 @@ __2. Tema 2__
   * __4.1.1__ Repaso Tema 1.
   * __4.1.2__ Repaso Tema 2.
   * __4.1.3__ Repaso Practicas.
+  
+__5. Teoria__
+
+* __5.1__ [Tema 1](https://github.com/IvanPerez9/Programming-Paradigms/blob/master/Python/TEORIA/TeoriaT1.md)
+* __5.2__ [Tema 2](https://github.com/IvanPerez9/Programming-Paradigms/blob/master/Python/TEORIA/TeoriaT1.md)
