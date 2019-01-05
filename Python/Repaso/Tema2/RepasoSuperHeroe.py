@@ -77,6 +77,21 @@ class SuperHeroe (object):
             self.poderes = line.split(":")[1].split(" ")
             self.apodos = line.split(":")[1].split(" ")
 
+    def cargarSuper2 (self, nombreArchivo):
+        with open(nombreArchivo , "r") as f:
+            line = f.readline()
+            self.nombre = line.split(":") [1:]
+            line = f.readline()
+            self.nacionalidad = line.split(":")[1:]
+            line = f.readline()
+            self.estatura = line.split(":")[1:]
+            line = f.readline()
+            self.peso = line.split(":")[1:]
+            line = f.readline()
+            self.apodos = line.split(":")[1:].split() #Los espacios en blanco
+            line = f.readline()
+            self.poderes = line.split(":")[1:].split()
+
 
 superheroe = SuperHeroe("Spiderman" , "EEUU" , "1,80", "80kg" , ["Maquina","Spidey", "Arañita"], [])
 superheroe.quitarApodo("Maquina")

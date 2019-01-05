@@ -105,5 +105,6 @@ print(p3.poderes)
 print("--un")
 p4 = p3.descendencia(p2)
 print(p4.poderes)
+print(p4.nombre)
 
 #Mirar union,diferencia etc y la indexacion con set y diccionarios
