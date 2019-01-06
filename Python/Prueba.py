@@ -2,9 +2,9 @@
 Archivo para ir probando hasta el examen
 """
 
-"""
-Clase superHeroe
-"""
+import random
+import statistics
+import datetime
 
 class superHeroe (object):
 
@@ -112,13 +112,20 @@ sM = superHeroe("Superman" , "EEUU" , "1,80" , "78" , ["Hombre de Acero"] , ["Su
 def noticia (superHeroe):
     print("Se ha vuelto a ver a " + superHeroe.darApodo() + " en NY, " + superHeroe.darApodo() + " ha sido visto en central park")
 
+def noticia2 (superHeroe):
+    apodos = superHeroe.apodos
+    print("Se ha vuelto a ver a " + random.sample(apodos , 1).pop() + " en NY, " + random.sample(apodos , 1).pop() + " ha sido visto en central park")
+
+
 sM.ganarApodos("Kal El")
 noticia(sM)
 sM.ganarApodos("El hijo de Krypton" )
 sM.ganarApodos("El hombre del mañana")
 sM.ganarApodos("Avion")
 print(sM.apodos)
-noticia(sM)
+print("-")
+noticia2(sM)
+noticia2(sM)
 sM.ganarApodos("El hijo de Krypton")
 sM.retirarse()
 noticia(sM)
@@ -138,4 +145,86 @@ p4 = p3.descendencia(p2)
 print(p4.peso)
 print(p4.poderes)
 print(p4.nombre)
+
+print("*******************************")
+print(" ")
+
+tipo = {"Casa" , "piso" , "caja carton"}
+def inmobiliaria (tipo, precio):
+    propiedad = []
+    for i in range(10):
+        propiedad.append((random.sample(tipo , 1)[0] , random.randint(10000 , precio)))
+    return propiedad
+
+salida = (inmobiliaria(tipo , 200000))
+print(salida)
+
+
+#Estafa cara o cruz
+
+moneda = random.randint(0,1)
+
+def lanzamiento ():
+    moneda = random.randint(0, 1)
+    if moneda == 1 :
+        return "H"
+    else:
+        return "T"
+
+def tirando (seq):
+    lanzar = lanzamiento()
+    while seq not in lanzar:
+        lanzar += lanzamiento()
+
+    return lanzar
+
+print(tirando("HTH"))
+
+def seq2 (seq1 , seq2):
+    lanzar = lanzamiento()
+    contador = 0
+    while seq1 not in lanzar and seq2 not in lanzar:
+        lanzar += lanzamiento()
+        contador += 1
+    if seq1 in lanzar:
+        return seq1, contador
+    else:
+        return seq2, contador
+
+ganador = (seq2("TTT" , "HHH"))
+print("El ganador es: " + ganador[0] + " con " + str(ganador[1]) + " tiradas" )
+
+#Fechas, 3 modulos datetime , time y date
+
+def fechaGregoriano (fecha):
+    return fecha.strftime("%j")
+
+def inversaJ (fecha):
+    return fecha.strptime ("365" , "%j")
+
+date = datetime.date.today()
+print(fechaGregoriano(date))
+
+#Cumpleaños
+
+def fechaAleatoria ():
+    date = random.randint(1, 365)
+    return datetime.datetime.strptime(str(date) , "%j")
+
+print(fechaAleatoria())
+
+def guardarFechas (fecha):
+    lista = list()
+    contador = 0
+    while fecha not in lista:
+        lista.append(fechaAleatoria())
+        contador += 1
+
+    return contador
+
+datee = fechaAleatoria()
+print(guardarFechas(datee))
+
+#RE
+
 
