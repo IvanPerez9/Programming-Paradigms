@@ -9,7 +9,7 @@
 * __1.5__ Operadores
 
 
-### [Teoría tema 2](https://github.com/IvanPerez9/Programming-Paradigms/blob/master/Python/TEORIA/TeoriaT1.md)
+### [Teoría tema 2](https://github.com/IvanPerez9/Programming-Paradigms/blob/master/Python/TEORIA/TeoriaT2.md)
 
 * __2.1__ Clases: Ejercicios relacionados con la creacion de clases y metodos de clase.
   * __2.1.1__ Clase Morse
