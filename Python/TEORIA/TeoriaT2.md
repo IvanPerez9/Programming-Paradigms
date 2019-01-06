@@ -51,6 +51,7 @@ __1. Tema 2__
     - Módulo .decimal para la precision si hay que redondear numeros
     - Módulo .date y .datetime para dar formato a fechas y horas
         - Se puede dar formato a la informacion de la hora con strftime( )
+        - strptime() traduce un string a date
     - Módulo .sys se usa para hacer que librerias cargen antes o despues de nuestro propio codigo
         - Se ve mucho con ` if __name__ == '__main__': ` 
         - Todo tiene que ver con el interprete de Python, y todo modulo tiene un atributo llamado __name__ que define el espacio de nombres en el que se está definiendo.
