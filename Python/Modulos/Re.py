@@ -119,8 +119,10 @@ if __name__ == "__main__" :
 
     # Crear una función que devuelva cuantas veces aparece en una cadena la palabra “esta”.
 
-    r13 = re.findall("esta" , "estasiquenoestaenestacadena esta")
+    r13 = re.findall(r"\besta\b" , "estasiquenoestaenestacadena esta")
     print(cuenta("esta estanteria esta estestada")) # Asi cuenta subcadenas
+
+    #Usar \b para delimiatar la cadena, si usamos este tipo de notacion poner siempre "r"
 
     # – Crear una función que dada una lista de números [1, 3, 10, 23]
     # devuelva [‘001’, ‘003’, ‘010’, ‘023’]

@@ -22,6 +22,10 @@ print(r)
 r2 = re.match("[^ ]+" , "Hola que tal")
 print(r2)
 
+frase = "Hola que tal"
+palabra = frase.split()
+print(palabra[:2])
+
 #Las casillas del ajedrez están nombradas con letras(columnas) y
 #números (filas). Escribe una expresión regular que evalúe si una
 #cadena tiene sólo posiciones validas de ajedrez.
@@ -38,9 +42,9 @@ Search: busca el primer substring que cumpla el patrón.
 #Numeros en hexadecimal. Comprobar una cadena tenga numeros en hexadecimal
 #Puede tener solo letras o solo numeros
 
-r4= re.match("[0-9a-fA-f]+$" , "8f3a")
-r44= re.match("[0-9a-fA-f]+" , "8f3azzzz") #Diferencias, con si $ acaba o no
-print(r4)
+r4= re.match("[0-9a-fA-f]+$" , "16c")
+r44= re.match("[0-9a-fA-f]+" , "8f3acebdfx5c") #Diferencias, con si $ acaba o no
+print(r44)
 
 #Crea una función que devuelva si una cadena es un identificador valido para una variable
 # Empieza por minuscula, sin _ ni simbolos, ni numero
@@ -65,6 +69,17 @@ print(r7)
 r8 = re.findall(r"\besta\b" , "esta estanteria esta atestada")
 print(len(r8))
 
+def findall (p, frase):
+    contador = 0
+    palabra = frase.split()
+    while len(palabra) > 0:
+        if p == palabra.pop():
+            contador += 1
+
+    return contador
+
+print("Otra forma de hacerlo: " + str(findall("esta" , "esta estanteria esta atestada")))
+
 #Crear una función que dada una lista de números [1, 3, 10, 23]
 #devuelva [‘001’, ‘003’, ‘010’, ‘023’]
 
@@ -81,7 +96,7 @@ print(subprograma([1,3,10,23]))
 
 #Crear una función que devuelva texto entrecomillado dentro de una cadena.
 
-r9 = re.findall(r" '.*? " , "Hola 'Ivan' que tal ")
+r9 = re.findall(r" '.*? " , "Hola 'Ivan' que 'tal' ") #Ojo con el ? no greedy, hace que no termine cuando empieza
 print(r9)
 
 #Crear una función que devuelve si una cadena es capicúa.
