@@ -247,7 +247,17 @@ def opuestos(lista):
         suma += e
     return suma
 
+def opositePair(l):
+    c = set()
+    for e in l:
+        if e not in c:
+            c.add(-e)
+        else:
+            c.remove(e)
+    return c
 
+print(opositePair([1, -1, 2, 3, 4, -3, -2]))
+print(opositePair([1,-1,2,-2,1,3]))
 print(opuestos([1, -1, 2, 3, 4, -3, -2]))
 
 #En una lista de números, todos están repetidos excepto uno.

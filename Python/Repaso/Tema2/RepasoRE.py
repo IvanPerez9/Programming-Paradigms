@@ -50,7 +50,7 @@ print(r44)
 #Crea una función que devuelva si una cadena es un identificador valido para una variable
 # Empieza por minuscula, sin _ ni simbolos, ni numero
 
-r5 = re.match("[_]*[A-Za-z]+[_0-9a-zA-Z]*$" , "Vvarible")
+r5 = re.match("[_]*[A-Za-z]+[_0-9a-zA-Z]*" , "Vvarible+")
 print(r5)
 
 #Crear una función que devuelva si una subcadena esta contenida en un string.
