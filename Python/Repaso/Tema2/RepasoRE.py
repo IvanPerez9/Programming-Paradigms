@@ -44,6 +44,7 @@ Search: busca el primer substring que cumpla el patrón.
 
 r4= re.match("[0-9a-fA-f]+$" , "16c")
 r44= re.match("[0-9a-fA-f]+" , "8f3acebdfx5c") #Diferencias, con si $ acaba o no
+# Tiene que ser exactamente lo que pasas $
 print(r44)
 
 #Crea una función que devuelva si una cadena es un identificador valido para una variable
