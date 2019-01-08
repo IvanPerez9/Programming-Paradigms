@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="76" column="64" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
+            <state relative-caret-position="176">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="39" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="360">
+              <caret line="224" column="24" selection-start-line="224" selection-start-column="24" selection-end-line="224" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -40,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Repaso/Practicas/Practica1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="3146">
               <caret line="143" column="6" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="6" />
             </state>
           </provider>
@@ -66,6 +66,9 @@
       <find>borde</find>
       <find>opo</find>
       <find>imprimirImagen</find>
+      <find>mayu</find>
+      <find>digi</find>
+      <find>cubi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,7 +158,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tema1'">
+  <component name="RunManager" selected="Python.Prueba">
     <configuration name="Practica2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,8 +291,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Tema1'" />
         <item itemvalue="Python.Prueba" />
+        <item itemvalue="Python.Tema1'" />
         <item itemvalue="Python.Practica2" />
         <item itemvalue="Python.RepasoRE" />
         <item itemvalue="Python.RepasoModulos" />
@@ -607,15 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/Repaso/Practicas/Practica1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="3146">
           <caret line="143" column="6" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="76" column="64" selection-start-line="76" selection-start-column="64" selection-end-line="76" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -626,10 +622,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="360">
+          <caret line="224" column="24" selection-start-line="224" selection-start-column="24" selection-end-line="224" selection-end-column="24" />
         </state>
       </provider>
     </entry>

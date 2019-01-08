@@ -1,79 +1,40 @@
-'''
-Created on 21 dec 2018
-
-@author: Iván
-'''
-
-#Trabajar con pilas y colas
-
-def apilar (pila,e):
-    pila.append(e)
-
-def desapilar (pila):
-    return pila.pop()
-
-def cima (pila):
-    return pila[-1]
-
-def encolar (cola,e):
-    cola.insert(0,e)
-
-def desencolar (cola):
-    return cola.pop()
-
-def primero (cola):
-    return cola[-1]
-
-def preordenIn (operador):
-    if operador == "(":
-        return 0
-    elif operador == "+" or operador == "-":
-        return 1
-    elif operador == "*" or operador == "/":
-        return 2
-    elif operador == "^":
-        return 3
-
-def preordenOut (operador):
-    if operador == "(":
-        return 5
-    elif operador== "+" or operador=="-":
-        return 1
-    elif operador == "*" or operador=="/":
-        return 2
-    elif operador == "^":
-        return 4
-
-def postFija (lista):
-    postFija = []
-    auxOperadores = []
-    for e in lista:
-        if e.isdigit() :
-            apilar(postFija,e)
-        else:
-            if len(auxOperadores) == 0:
-                apilar(auxOperadores,e)
-            elif preordenIn(e) > preordenOut(cima(auxOperadores)) :
-                apilar(auxOperadores,e)
-            elif e == ")" :
-                while cima(desapilar(auxOperadores)) != "(" :
-                    apilar(postFija, desapilar(auxOperadores))
-                desapilar(auxOperadores)
-            else:
-                apilar(postFija,desapilar(auxOperadores))
-
-
-
-lista1 = [1,2,3,4,5,6]
-
-lista2 = lista1[:]
-
-print(lista2)
-
 """
-Lista : Coleccion Heterogenea , ordenado y mutable
-Set : Coleccion desordenada, mutable de objetos hasheables
-Frozetset : Coleccion inmutable, por lo que es hasheable
-Diccionarios: Coleccion clave valor, la clave a de ser hasheable
+CUBINFINITO
+Un número es cubifinito si al elevar al cubo sus dígitos y
+sumarlos da como resultado 1 u otro número cubifinito. Crear
+una función que reciba un número y devuelva si es cubifinito
 """
+def digitos2(num):
+    l = []
+    for e in str(num):
+        l.append(e)
+    return l
 
+
+def cubifinito(numero):
+    suma = sum([int(x) ** 3 for x in str(numero)])
+    anterior = 0
+    respuesta = str(numero)
+    while suma != 1 and anterior != suma:
+        anterior = suma
+        suma = sum([int(x) ** 3 for x in str(suma)])
+        respuesta += ' -> ' + str(suma)
+    if suma == 1:
+        respuesta += ' -> cubifinito.'
+    else:
+        respuesta += ' -> ' + str(suma) + ' -> no cubifinito.'
+    return respuesta
+
+def cubifinito2(num):
+    resultado = sum([int(x)**3 for x in str(num)])
+    if resultado == 1:
+        return True
+    elif sum([int(x)**3 for x in str(resultado)]) == 1:
+        return True
+    else:
+        return False
+    return resultado == 1 or cubifinito(resultado) == 1
+
+
+print(cubifinito(100))
+print(cubifinito2(1243))
