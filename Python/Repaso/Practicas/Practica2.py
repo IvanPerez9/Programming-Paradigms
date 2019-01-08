@@ -39,8 +39,11 @@ rectángulo, de ser así cambiará su valor por el color recibido
 def limpiarPantalla (screen):
     return screen.fill(0)
 
-def imprimirImagen (img, fila, columna, valor):
-    img[fila][columna] = valor
+def modificarPantalla (img, fila, columna, valor):
+    img[columna][fila] = valor
+
+def imprimirPantalla (screen):
+    print(screen)
 
 #Definir tipos de datos para un rectangulo
 
@@ -54,13 +57,13 @@ def isIn (rect, point):
     return rect.p1.x <= point.x <= rect.p2.x and rect.p1.y <= point.y <= rect.p2.y
 
 def rasterize (screen, rectangle, value):
-    file, column = screen.shape
+    file, column = screen.shape #Da la dimension del numpy o array
     for i in range(file):
         for e in range(column):
             point = Point(e,i)
             if isIn(rectangle,point):
-                screen[i][e] = value
-
+                #screen[i][e] = value
+                modificarPantalla(screen, i,e, value)
 #Principal
 if __name__ == '__main__':
 

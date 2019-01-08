@@ -247,6 +247,8 @@ def opuestos(lista):
         suma += e
     return suma
 
+#Si hay más de 1 sin opuesto, con un set de "vistos"
+
 def opositePair(l):
     c = set()
     for e in l:

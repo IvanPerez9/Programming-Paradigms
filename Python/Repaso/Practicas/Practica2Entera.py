@@ -1,6 +1,8 @@
-"""
-Archivo para ir probando hasta el examen
-"""
+'''
+Created on 8 jan. 2018
+
+@author: IvánPerez9
+'''
 
 import collections
 import numpy as np
@@ -13,27 +15,6 @@ Tipo de dato imagen, de 10x10 , una matriz de numeros con numpy
 
 ####
 
-"""
-La imagen será representada como una matriz con valores numéricos (que representan color). Se
-utilizará el módulo numpy para crear la imagen junto a las siguientes funciones:
- Definir una función que limpie la imagen y ponga todos sus pixeles a cero.
- Definir una función que imprime por pantalla la imagen
- Definir una función que permite modificar el valor de un pixel de la imagen.
-"""
-
-"""
-El rasterizador más sencillo de construir es el que permite rasterizar un rectángulo alineado a los
-ejes (AABB – axis aligned bounding box). Se pide:
-
- Definir el tipo de dato que representa un rectángulo.
-Puede ser conveniente definir otros tipos de datos como puntos y/o vértices.
-Un rectángulo alineado con los ejes está definido por 2 puntos, su esquina superior izquierda y
-su esquina inferior derecha.
- Crear un método que rasterice un rectángulo alineado.
-Recibirá una imagen, el rectángulo y el color (un entero).
-Por cada pixel de la imagen (elemento de la matriz) comprobará si cae dentro del área del
-rectángulo, de ser así cambiará su valor por el color recibido
-"""
 
 Punto = collections.namedtuple("Punto" ,["x" , "y"])
 Recta = collections.namedtuple("Recta" , ["v0" , "v1" ])
