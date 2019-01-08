@@ -74,7 +74,7 @@ print(invertirCadena("Hola"))
 # cadena con sólo la primera letra mayúscula
 
 def mayusCadena (cadena):
-    return cadena [0:1].upper() + cadena [1:].lower()
+    return cadena [0:1].upper() + cadena [1::].lower()
 
 print(mayusCadena("jejejeE"))
 
