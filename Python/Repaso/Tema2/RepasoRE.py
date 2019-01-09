@@ -6,16 +6,16 @@ Created on 27 dec. 2018
 '''
 import re
 # ¿Qué cadena evalúa ‘ab*’?
-# R: Evalua ab de 0 a N veces
+# R: A seguida de muchas B
 
 # ¿Qué patrón evalúa la cadena ‘abab…ab’?
-# R: ab* o ab+ si al menos tiene 1
+# R: El patron (ab)*
 
 # Dado el patrón ‘a.*c’ y la cadena ‘abcabc’ ¿qué evalúa?
-# R: El primer abc y el segundo, a seguido de cualquier caracter y terminado en c . Sin $ no para
+# R: a seguido de cualquier caracter y terminado en c . Sin $ no para
 
 # ¿Qué patrón evalúa una ‘a’ seguida de 3 o más ‘b’?
-r = re.match("abbb+" , "abbb")
+r = re.match("a+b{3,}" , "abbb")
 print(r)
 
 #¿Qué patrón evalúa la primera palabra de una cadena?
@@ -29,11 +29,11 @@ print(palabra[:2])
 #Las casillas del ajedrez están nombradas con letras(columnas) y
 #números (filas). Escribe una expresión regular que evalúe si una
 #cadena tiene sólo posiciones validas de ajedrez.
-r3 = re.match("[a-hA-h][1-8]+?" , "h4")
+r3 = re.match("[a-hA-h][1-8]+?" , "h4") #Poniendole ? (voraz) que coincida con la menor cadena posible
 print(r3)
 
 """
-Search: busca el primer substring que cumpla el patrón.
+• Search: busca el primer substring que cumpla el patrón.
 • Findall: devuelve una lista con todos los substring.
 • Sub: sustituye el substring que cumple el patrón por otro substring.
 • Compile: permite preprocesar un patrón.
@@ -55,7 +55,7 @@ print(r5)
 
 #Crear una función que devuelva si una subcadena esta contenida en un string.
 
-r6 = re.search("pene+" , "cadepenpenena")
+r6 = re.search("pene+" , "cadepenepenena")
 print(r6)
 
 #Crear una función que recibe una cadena y la devuelve
