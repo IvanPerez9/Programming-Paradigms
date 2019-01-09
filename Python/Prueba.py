@@ -35,6 +35,18 @@ def cubifinito2(num):
         return False
     return resultado == 1 or cubifinito(resultado) == 1
 
+def cubifinito3 (num):
+    suma = 0
+    for e in str(num):
+        suma += int(e ** 3)
+    if suma == 1 :
+        print("Cubifinito")
+    elif suma > 10:
+        return cubifinito3(suma)
+    else:
+        print("No es cubifinito")
+
 
 print(cubifinito(100))
 print(cubifinito2(1243))
+print(cubifinito3(1243))

@@ -224,6 +224,34 @@ def cubifinito2(num):
 print(cubifinito(100))
 print(cubifinito2(1243))
 
+"""
+Write a function, persistence, that takes in a positive parameter num and returns 
+its multiplicative persistence,which is the number of times you must multiply the
+digits in num until you reach a single digit
+
+persistence(39) => 3  # Because 3*9 = 27, 2*7 = 14, 1*4=4
+                       # and 4 has only one digit.
+
+persistence(999) => 4 # Because 9*9*9 = 729, 7*2*9 = 126,
+                       # 1*2*6 = 12, and finally 1*2 = 2.
+
+persistence(4) => 0   # Because 4 is already a one-digit number.
+"""
+
+
+def persistence(num):
+    persistence = 1
+    contador = 0
+    if num > 10:
+        for i in str(num):
+            persistence = persistence * int(i)
+            contador += 1
+    return 1 + contador
+
+
+print(persistence(999))
+print(persistence(39))
+
 #– Implementar las funciones sobre conjunto, unión, intersección, diferencia y copia.
 
 def union (c1,c2): # | union
@@ -346,7 +374,7 @@ def conjunto_potencia(a_set):
     t = a_set[1:]  # Todos menos el primero
     return conjunto_potencia(t) + addTo(e, conjunto_potencia(t))
 
-
+print("Conjunto potencia: ")
 print(conjunto_potencia([1, 2, 3, 4, 5]))
 
 """
@@ -452,27 +480,4 @@ def eliminar (n,agenda):
 eliminar("Ivan" , agenda)
 print(agenda)
 
-# Crear una función que escribe una cadena en Morse.
-
-
-def morseTraduccion (cadena):
-    morse = {'A': '.-', 'B': "-...", 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--', 'H': '....', 'I': '..',
-             'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'Ñ': '--.--', 'O': '---', 'p': '.--.',
-             'Q': '--.-',
-             'R': '.-.', 'S': '...', 'T': '-', 'U': '..--', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--',
-             'Z': '--..',
-             '0': '-----', '1': '.----', '2': '..---', '3': ':...--', '4': '....-', '5': '.....', '6': '-....',
-             '7': '--...', '8': '---..', '9': '----.', '.': '.-.-.-', ',': '-.-.--', '?': '..--..', '"': '.-..-.',
-             '!': '--..--'}
-    traducido = []
-    palabras = cadena.split()
-    for e in palabras:
-        traducido.append(morse.get(e))
-        traducido.append(" ")
-
-    cadena1 = ''.join(str(traducido))
-    print(traducido)
-    print(str(cadena1))
-
-
-print(morseTraduccion("HOLA QUE TAL"))
+# Crear una función que escribe una cadena en Morse. -> Tema 2
