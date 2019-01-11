@@ -77,7 +77,7 @@ __1. Tema 2__
         - Dollar ($) : Final de String, sirve para asegurarse que no queda nada
         - (*) : La RE previa 0 o N veces
         - (+) : La RE previa 1 o N veces
-        - (?) : La RE previa 0 o 1 vez. Modo no voraz
+        - (?) : La RE previa 0 o 1 vez. Modo no voraz. Debe coincidir con la menor cadena posible, modificando el comportamiento             de otro
         - {m} : La RE previa m veces
         - {n,m} : La RE previa entre n y m veces
         - [_] : Cualquier caracter del set

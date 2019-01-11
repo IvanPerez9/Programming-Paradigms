@@ -76,7 +76,7 @@ __1. Tema 1__
           ` for k,v in diccionario: ` 
           - Se puede construir con una lista de tuplas.
           
-            ` d = dict([(“one”, 1), (“three”, 3), (“two”, 2)]) `
+            ` d = dict([(“one”: 1), (“three”: 3), (“two”: 2)]) `
 
           -  `d.keys() # lista de claves`
           
