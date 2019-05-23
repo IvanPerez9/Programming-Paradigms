@@ -157,3 +157,11 @@ def mayus ():
 
 #Imprimir una matriz
 
+matriz = [[1,2,3],[1,4,4]]
+def imprimirMatriz (m):
+    for i in range(len(m)+1):
+        for j in range(len(m)):
+            print(m[j][i] , end=" ")
+
+#imprimirMatriz(matriz)
+

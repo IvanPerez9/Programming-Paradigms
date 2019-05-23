@@ -13,17 +13,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8470">
-              <caret line="447" column="12" selection-start-line="447" selection-start-column="6" selection-end-line="447" selection-end-column="12" />
+            <state relative-caret-position="44">
+              <caret line="379" selection-start-line="379" selection-end-line="392" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1.py">
+        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1_segundaParte.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+              <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
             </state>
           </provider>
         </entry>
@@ -52,6 +52,7 @@
       <find>digi</find>
       <find>cubi</find>
       <find>contar</find>
+      <find>cima</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,6 +95,7 @@
         <option value="$PROJECT_DIR$/Python/Examen.py" />
         <option value="$PROJECT_DIR$/Python/Examen2.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1.py" />
+        <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1_segundaParte.py" />
       </list>
     </option>
   </component>
@@ -133,6 +135,19 @@
               <item name="Repaso" type="462c0819:PsiDirectoryNode" />
               <item name="Tema1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="RepasoJunio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="RepasoJunio" type="462c0819:PsiDirectoryNode" />
+              <item name="Tema1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -166,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tema1">
+  <component name="RunManager" selected="Python.Tema1_segundaParte">
     <configuration name="Examen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -230,27 +245,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RepasoRE" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Paradigmas" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/Repaso/Tema2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoRE.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Tema1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,13 +266,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Tema1_segundaParte" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Paradigmas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Tema1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1_segundaParte.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tema1_segundaParte" />
         <item itemvalue="Python.Tema1" />
         <item itemvalue="Python.Examen2" />
         <item itemvalue="Python.Examen" />
         <item itemvalue="Python.Examen1" />
-        <item itemvalue="Python.RepasoRE" />
       </list>
     </recent_temporary>
   </component>
@@ -636,17 +651,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8470">
-          <caret line="447" column="12" selection-start-line="447" selection-start-column="6" selection-end-line="447" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="379" selection-start-line="379" selection-end-line="392" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema1/Tema1_segundaParte.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="178" lean-forward="true" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
