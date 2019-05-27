@@ -144,7 +144,7 @@ def main (expresion):
     pf = postFija(l)
     return print(resultado(pf))
 
-expresion = ' 4 - 5 ^ ( 5 - 2 ) + 9 * 7 - 24 / ( 7 - 2 ) '
+expresion = ' 5 + 8 * 9 -3 * ( 6 -4 ) '
 main(expresion)
 
 #OJO LOS ISDIGIT ES EN MINUSCULAS
