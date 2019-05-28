@@ -1,0 +1,6 @@
+Nombre: Spiderman
+Nacionalidad: EEUU
+Estatura: 1,80
+Peso: 80
+Apodos: Spi 
+Poderes: Tela 
