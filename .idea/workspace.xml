@@ -11,19 +11,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoSuperHeroe.py">
+        <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-327">
-              <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+            <state relative-caret-position="1540">
+              <caret line="101" column="36" lean-forward="true" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroe.py">
+        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerencia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -100,6 +100,7 @@
         <option value="$PROJECT_DIR$/Python/Repaso/Practicas/Practica1.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseMorse.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroe.py" />
+        <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerencia.py" />
       </list>
     </option>
   </component>
@@ -185,7 +186,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ClaseSuperHeroe">
+  <component name="RunManager" selected="Python.ClaseHerencia">
+    <configuration name="ClaseHerencia" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Paradigmas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerencia.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ClaseMorse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,27 +242,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Practica1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Paradigmas" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Practica1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Practica1/Practica1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ClaseHerencia" />
         <item itemvalue="Python.ClaseSuperHeroe" />
         <item itemvalue="Python.RepasoSuperHeroe" />
         <item itemvalue="Python.ClaseMorse" />
         <item itemvalue="Python.Practica1" />
-        <item itemvalue="Python.Practica1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -572,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269">
-          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -695,8 +689,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="95" column="21" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+        <state relative-caret-position="149">
+          <caret line="88" column="19" lean-forward="true" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="101" column="36" lean-forward="true" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerencia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="77" column="76" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="76" />
         </state>
       </provider>
     </entry>
