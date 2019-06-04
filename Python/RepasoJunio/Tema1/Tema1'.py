@@ -249,7 +249,7 @@ def union (c1,c2):
 c1 = {1,2}
 c2 = {2,3}
 
-#Interseccion con & , diferencia con - , copia con :: en listas, aqui copy
+#Interseccion con & , diferencia con - , copia con : en listas, aqui copy
 
 def copia (c1,c2):
     c1 = c2.copy()
@@ -308,3 +308,20 @@ def dicInverso (dic):
 
 d = {"Uno":1 , "Dos" :2 }
 print(dicInverso(d))
+
+print("hola" [::-1])
+
+
+c = {1,2,3,4}
+l = [1,2,3]
+c2 = c.copy()
+for i in c:
+    print(str(i))
+print(c)
+
+t = ("Hola" , 4)
+print(t)
+l2 = l
+l[0] = 7
+print(l2)
+
