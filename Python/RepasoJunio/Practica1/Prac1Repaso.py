@@ -65,7 +65,7 @@ def convertirEnPostFija (lista):
                 apilar(pila,e)
             else:
                 while len(pila) != 0 and preOrdenIn(cima(pila)) >= preOrdenOut(e) :
-                    pf.append(cima(pila))
+                    pf.append(desapilar(pila))
                 apilar(pila,e)
     while len(pila) != 0:
         pf.append(desapilar(pila))
