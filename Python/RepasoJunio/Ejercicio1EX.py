@@ -24,3 +24,136 @@ Crear una función que recibe un certificado y devuelve si es un certificado val
 En este ejercicio no será necesario documentar las clases, métodos o funciones.
 """
 
+
+class Certificado():
+
+    # Falta añadir asignaturas y TFG profesores y alumnos
+
+    def __init__(self, profesor, alumno, fecha):
+        self.profesor = profesor
+        self.alumno = alumno
+        self.fecha = fecha
+
+    def mensaje(self, profesor, alumno, fecha):
+        pass
+
+    def imprimirPantalla(self, certificado):
+        print("Nombre alumno: " + certificado.alumno.nombre)
+        print("Nombre profesor: " + certificado.alumno.nombre)
+        print("Nombre TFG: " + certificado.alumno.TFG)
+
+    # Se considerarán invalidos todos los certificados que beneficien a un alumno que no tiene la asignatura o TFG que se certifica, o que el responsable de ese certificado (el profesor) no imparte la asignatura o el TFG.
+    def esValido(self, certificado):
+        pass
+
+    def mismoTFG(self):
+        if self.alumno.TFG not in self.profesor.TFG:
+            return False
+        return True
+
+
+class Alumno():
+
+    # Falta añadir asignaturas y TFG profesores y alumnos
+
+    def __init__(self, nombre, apellido,TFG, asignaturas=set()):
+        self.nombre = nombre;
+        self.apellido = apellido
+        self.TFG = TFG
+        self.asignaturas = asignaturas
+
+    def asignarTFG(self, TFG, profesor):
+        if self.TFG != None:
+            print("Ya tiene un TFG asignado")
+        else:
+            self.TFG = TFG
+            profesor.TFGs.append(TFG)
+
+    def anadirAsignatura(self, asignatura):
+        if asignatura not in self.asignatura:
+            self.asignatura.add(asignatura)
+        else:
+            print("Ya cursa esa asignatura")
+
+    def imprimirAlumno(self):
+        print("Nombre: " + self.nombre);
+        print("Apellido: " + self.apellido)
+        if self.TFG != None:
+            print("El TFG asignado es: " + self.TFG)
+        else:
+            print("No tiene TFG asignado")
+
+        if len(self.asignaturas) != 0:
+            print("Asignatuas asignadas: ", end="");
+            for i in self.asignaturas:
+                print(i)
+        else:
+            print("No tiene asignaturas asignadas")
+
+
+class Profesor():
+
+    # Falta añadir asignaturas y TFG profesores
+
+    def __init__(self, nombre, apellido, TFGs=[], asignaturas=set()):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.TFGs = TFGs
+        self.asignaturas = asignaturas
+
+    def asignarTFG(self, TFG, alumno):
+        if len(self.TFGs) < 10:
+            print("Puede asignarle TFG " + TFG + " a " + alumno.nombre + " como responsable " + self.nombre)
+            self.TFGs.apprend(TFG)
+        else:
+            print("No puede dirigir más TFGs")
+
+    def anadirAsignatura(self, asignatura):
+        if asignatura not in self.asignaturas:
+            self.asignaturas.add(asignatura)
+        else:
+            print("Ya imparte esa asignatura")
+
+    def imprimirProfesor(self):
+        print("Nombre: " + self.nombre);
+        print("Apellido: " + self.apellido)
+        if len(self.TFGs) != 0:
+            for i in self.TFG:
+                print("Tiene: " + i + " TFGs")
+        else:
+            print("No tiene TFGs asignados")
+
+        if len(self.asignaturas) != 0:
+            for i in self.asignaturas:
+                print("Imparte: " + i + " asignatura")
+        else:
+            print("No tiene asignaturas asignadas")
+
+
+class CertificadoAsistencia(Certificado):
+
+    def mensaje(self):
+        print("El profesor " + self.profesor.nombre + " responsable de la asignatura " +
+              str(self.alumno.asignatura) + " certifica la asistencia de " +
+              self.alumno.nombre + " al examen celebrado el día " + self.fecha + " .")
+
+
+class CertificadoTFG(Certificado):
+
+    def mensaje(self):
+        print("El profesor " + self.profesor.nombre + " director del trabajo final de carrera " +
+              self.alumno.tfg + " certifica la defensa por parte de " +
+              self.alumno.nombre + " a fecha de " + self.fecha + " .")
+
+
+
+
+if __name__ == '__main__':
+    prof1 = Profesor("David" , "Concha" , ["TFG1" , "TFG2"] , ["PP" , "ED"])
+    prof2 = Profesor("Jesus" , "Sanchez" , ["TFG1"] , ["Concurrente"] )
+    alum1 = Alumno("Ivan" , "Perez" , "TFG1" , ["PP" , "Concurrente"])
+    alum2 = Alumno("Pepe" , "Muñoz" , "TFG2" , [])
+    cer = Certificado(prof1 , alum1 , "10/02")
+    cer2 = Certificado(prof2, alum2 , "11/02")
+
+    print(cer.alumno.nombre) # Prueba
