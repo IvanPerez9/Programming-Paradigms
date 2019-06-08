@@ -32,6 +32,9 @@ r7 = re.match("[_]*[a-z]+[_0-9a-zA-Z]*" , "Vvariable")
 # Subcadena contenida en un String
 # Modo no voraz, obtener la primera
 r8 = re.match("(abc)+?" , "abcabcabs")
+r82 = re.search("abc" , "abcsdab")
+print(r8)
+print(r82)
 
 #Recibir una cadena y devolverla sin espacios en blanco
 
