@@ -142,7 +142,7 @@ class CertificadoTFG(Certificado):
 
     def mensaje(self):
         print("El profesor " + self.profesor.nombre + " director del trabajo final de carrera " +
-              self.alumno.tfg + " certifica la defensa por parte de " +
+              self.alumno.TFG + " certifica la defensa por parte de " +
               self.alumno.nombre + " a fecha de " + self.fecha + " .")
 
 
@@ -154,6 +154,7 @@ if __name__ == '__main__':
     alum1 = Alumno("Ivan" , "Perez" , "TFG1" , ["PP" , "Concurrente"])
     alum2 = Alumno("Pepe" , "Muñoz" , "TFG2" , [])
     cer = Certificado(prof1 , alum1 , "10/02")
-    cer2 = Certificado(prof2, alum2 , "11/02")
+    cerTFG = CertificadoTFG(prof1, alum1, "12/06")
 
     print(cer.alumno.nombre) # Prueba
+    cerTFG.mensaje()
