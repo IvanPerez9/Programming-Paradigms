@@ -24,17 +24,16 @@ Se pide, escribir las instruciones necesarias para que "b" tenga los valores esp
 Como es un script, será necesario proteger las instrucciones para que no sean ejecutadas en
 caso de que erroneamente un usuario de nuestro script lo importe como un módulo. (1 punto)
 """
+
 import numpy as np
 
-if __name__ == '__main__':
-    a = np.random.randint(255, size=(240, 640))
-    b = np.zeros((480, 640))
+arr = np.arange(12).reshape(3,4)
+print(arr)
 
-    for i in b:
-        for j in b:
-            if i % 2 == 0:
-                b[i][j] = a[i][j]
-            else:
-                b[i] = b[i][j]
+for i in range(4):
+    if (4 % (i+1) != 0):
+        a = arr.insert(arr , [i-1] , [[0]] , axis = 0 ) # Axis = 0 es por fila , con 1 es por columna
+        a = arr.insert(a , [i+1] , [[0]] , axis = 0) # Repetir para la ultima fila o primera
 
-    print(b)
+print(a)
+

@@ -59,7 +59,7 @@ class SuperHeroe():
             self.poderes = line.split(": ")[1].split(" ")
 
 
-super1 = SuperHeroe("Spiderman" , "EEUU" , "1,80" , "75" , {"El trepa muros" , "Spidey"} , {"Tela" , "Escalar"})
+super1 = SuperHeroe("Spiderboy" , "EEUU" , "1,80" , "75" , {"El trepa muros" , "Spidey"} , {"Tela" , "Escalar"})
 print(super1.apodos)
 super1.ganarApodos("PruebaApodo")
 print(super1.apodos)
