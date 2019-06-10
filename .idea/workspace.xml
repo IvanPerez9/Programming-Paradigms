@@ -28,11 +28,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python/Prueba3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -83,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python/Modulos/Modulos.py" />
         <option value="$PROJECT_DIR$/Python/Modulos/Fechas.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoFechas.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Practica2.py" />
@@ -134,6 +142,7 @@
         <option value="$PROJECT_DIR$/Python/Prueba2.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema1/Repaso.py" />
         <option value="$PROJECT_DIR$/Python/Prueba.py" />
+        <option value="$PROJECT_DIR$/Python/Prueba3.py" />
       </list>
     </option>
   </component>
@@ -327,12 +336,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28328612" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28328612" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30878186" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -366,7 +375,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Practica2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Python/Repaso/Practicas/Practica2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-70">
@@ -720,6 +728,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Prueba3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
         </state>
       </provider>
     </entry>
