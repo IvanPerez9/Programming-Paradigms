@@ -272,4 +272,56 @@ def inverso (diccionario):
 	d = dict(zip(v,k))
 	return d
 
-#
+"""
+Write a function, persistence, that takes in a positive parameter num and returns 
+its multiplicative persistence,which is the number of times you must multiply the
+digits in num until you reach a single digit
+persistence(39) => 3  # Because 3*9 = 27, 2*7 = 14, 1*4=4
+                       # and 4 has only one digit.
+persistence(999) => 4 # Because 9*9*9 = 729, 7*2*9 = 126,
+                       # 1*2*6 = 12, and finally 1*2 = 2.
+persistence(4) => 0   # Because 4 is already a one-digit number.
+"""
+
+def persistence (num):
+    multiplicacion = 1
+    contador = 0
+    if num > 10:
+        for i in str(num): # Ojo con esto para los digitos str
+            multiplicacion = multiplicacion * i
+            contador += 1
+
+    return 1 + contador
+
+"""
+CUBINFINITO
+Un número es cubifinito si al elevar al cubo sus dígitos y
+sumarlos da como resultado 1 u otro número cubifinito. Crear
+una función que reciba un número y devuelva si es cubifinito
+"""
+
+def cubinfinito (num):
+    suma = 0
+    for i in str(num):
+        suma += int(i ** 3)
+    if suma == 1:
+        print("Cubinfinito")
+    elif suma > 10:
+        return cubinfinito(suma)
+    else:
+        print("No es cubi")
+
+def addTo(e, t):
+    for s in t:
+        s += [e]
+    return t
+
+
+def conjunto_potencia(a_set):
+    if not a_set: return [[]]
+    e = a_set[0]
+    t = a_set[1:]  # Todos menos el primero
+    return conjunto_potencia(t) + addTo(e, conjunto_potencia(t))
+
+print("Conjunto potencia: ")
+print(conjunto_potencia([1, 2, 3, 4, 5]))

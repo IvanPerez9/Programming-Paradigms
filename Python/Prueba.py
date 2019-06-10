@@ -50,3 +50,18 @@ def cubifinito3 (num):
 print(cubifinito(100))
 print(cubifinito2(1243))
 print(cubifinito3(1243))
+
+def addTo(e, t):
+    for s in t:
+        s += [e]
+    return t
+
+
+def conjunto_potencia(a_set):
+    if not a_set: return [[]]
+    e = a_set[0]
+    t = a_set[1:]  # Todos menos el primero
+    return conjunto_potencia(t) + addTo(e, conjunto_potencia(t))
+
+print("Conjunto potencia: ")
+print(conjunto_potencia([1, 2, 3, 4, 5]))
