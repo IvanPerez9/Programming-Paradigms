@@ -134,7 +134,7 @@ class CertificadoAsistencia(Certificado):
 
     def mensaje(self):
         print("El profesor " + self.profesor.nombre + " responsable de la asignatura " +
-              str(self.alumno.asignatura) + " certifica la asistencia de " +
+              str(self.alumno.asignaturas) + " certifica la asistencia de " +
               self.alumno.nombre + " al examen celebrado el día " + self.fecha + " .")
 
 
@@ -155,6 +155,8 @@ if __name__ == '__main__':
     alum2 = Alumno("Pepe" , "Muñoz" , "TFG2" , [])
     cer = Certificado(prof1 , alum1 , "10/02")
     cerTFG = CertificadoTFG(prof1, alum1, "12/06")
+    cerAsis = CertificadoAsistencia(prof1 , alum1, "03/02")
 
     print(cer.alumno.nombre) # Prueba
     cerTFG.mensaje()
+    cerAsis.mensaje()
