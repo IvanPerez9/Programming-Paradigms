@@ -4,6 +4,10 @@ import datetime
 Crear una función que reciba una fecha (calendario gregoriano)
 y devuelva el número de días desde el principio del año
 (calendario juliano)
+
+strftime() is used to convert a time to string. The ‘time’ must be of a type struct_time which is a ‘tuple’ or list/array of time components. (A ‘tuple’ is a unique python structure)
+
+strptime is used to convert a date string to a datetime object.
 """
 
 def calendarioJuliano (fecha):
