@@ -10,7 +10,7 @@ class SuperHeroe:
     def añadirPoderes(self, iterable):
         for e in iterable:
             self.poderes.append(e)
-x
+
     __añadirPoderes = añadirPoderes
 
 
