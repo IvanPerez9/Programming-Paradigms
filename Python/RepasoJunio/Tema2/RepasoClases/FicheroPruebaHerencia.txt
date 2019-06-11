@@ -1,0 +1,6 @@
+Nombre: Spiderman
+Nacionalidad: EEUU
+Estatura: 75
+Peso: 1,80
+Apodos: Spidey Prueba 
+Poderes: Telarana Trepar 
