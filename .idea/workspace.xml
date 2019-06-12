@@ -10,29 +10,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseRE.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio1EX.py">
+        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseRERepaso.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="392">
+              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/Examen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio3EX.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <entry file="file://$PROJECT_DIR$/Python/TEORIA/TeoriaT2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="286">
+                <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -74,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoHerencia.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Tema2/RepasoModulos.py" />
         <option value="$PROJECT_DIR$/Python/Modulos/Re.py" />
         <option value="$PROJECT_DIR$/Python/Repaso/Practicas/Practica2.py" />
@@ -102,7 +104,6 @@
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Practica2/Prac2Repaso.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Practica1/Prac1Repaso.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseMorseRepaso.py" />
-        <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseRE.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerenciaRepaso.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseExcepcionesRepaso.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseModuloRepaso.py" />
@@ -110,7 +111,6 @@
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Slice.py" />
         <option value="$PROJECT_DIR$/Python/fichero2.txt" />
         <option value="$PROJECT_DIR$/Python/fichero1.txt" />
-        <option value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio2EX.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/FicheroRepasoHeroes" />
         <option value="$PROJECT_DIR$/Python/Examen2.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio3EX.py" />
@@ -125,6 +125,9 @@
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseHerencia2.py" />
         <option value="$PROJECT_DIR$/Python/Numpy.py" />
         <option value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio1EX.py" />
+        <option value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio2EX.py" />
+        <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseRE.py" />
+        <option value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseRERepaso.py" />
       </list>
     </option>
   </component>
@@ -156,6 +159,19 @@
               <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="RepasoJunio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="RepasoJunio" type="462c0819:PsiDirectoryNode" />
+              <item name="Tema2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Paradigmas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Paradigmas" type="462c0819:PsiDirectoryNode" />
+              <item name="Python" type="462c0819:PsiDirectoryNode" />
+              <item name="TEORIA" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,28 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Ejercicio1EX">
-    <configuration name="ClaseHerencia1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Paradigmas" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseHerencia1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ClaseRERepaso">
     <configuration name="ClaseHerencia2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,7 +229,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ClaseSuperHeroeRepaso" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ClaseRERepaso" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Paradigmas" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,11 +237,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroeRepaso.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseRERepaso.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,6 +263,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio1EX.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Ejercicio2EX" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Paradigmas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python/RepasoJunio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/RepasoJunio/Ejercicio2EX.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,11 +315,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ClaseRERepaso" />
+        <item itemvalue="Python.Ejercicio2EX" />
         <item itemvalue="Python.Ejercicio1EX" />
         <item itemvalue="Python.Numpy" />
         <item itemvalue="Python.ClaseHerencia2" />
-        <item itemvalue="Python.ClaseHerencia1" />
-        <item itemvalue="Python.ClaseSuperHeroeRepaso" />
       </list>
     </recent_temporary>
   </component>
@@ -363,20 +379,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1303864164/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="803" column="8" selection-start-line="803" selection-start-column="8" selection-end-line="803" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/ClasesYHerenciaCodeAcademy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Practica2/Prac2Repaso.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -417,9 +419,6 @@
           <caret line="8" lean-forward="true" selection-end-line="120" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/fichero1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/fichero2.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -519,25 +518,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/TEORIA/TeoriaT1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1342" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/Repaso/Tema1/Tema1'.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8360">
           <caret line="385" column="24" lean-forward="true" selection-start-line="385" selection-start-column="24" selection-end-line="385" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio2EX.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-752">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -552,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseRE.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -580,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="317" lean-forward="true" selection-start-line="317" selection-end-line="317" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -643,27 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroeRepaso.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Prueba3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/Prueba2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseFechasRepaso.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -671,24 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerenciaRepaso.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseHerencia2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio3EX.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -706,10 +641,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/fichero1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio2EX.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/TEORIA/TeoriaT1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio1EX.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="172">
+          <caret line="177" column="46" lean-forward="true" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Ejercicio3EX.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Prueba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Prueba2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Prueba3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseHerenciaRepaso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseSuperHeroeRepaso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/TEORIA/TeoriaT2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="286">
+            <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/ClaseRE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/RepasoJunio/Tema2/RepasoClases/ClaseRERepaso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
         </state>
       </provider>
     </entry>

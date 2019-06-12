@@ -45,6 +45,8 @@ def palabrasNumeroDiccionario (fichero1, fichero2):
                 dic[i] += 1
             else:
                 dic[i] = 1
+        else:
+            dic[i] = 0
 
     return dic
 
