@@ -42,10 +42,13 @@ class Certificado():
         print("Nombre profesor: " + certificado.alumno.nombre)
         print("Nombre TFG: " + certificado.alumno.TFG)
 
-    # Se considerarán invalidos todos los certificados que beneficien a un alumno que no tiene la asignatura o TFG que se certifica, o que el responsable de ese certificado (el profesor) no imparte la asignatura o el TFG.
-    def esValido(self, certificado):
+    # Se considerarán invalidos todos los certificados que beneficien a un alumno que no tiene la
+    # asignatura o TFG que se certifica, o que el responsable de ese certificado (el profesor) no
+    # imparte la asignatura o el TFG.
+    def esValido(self):
         pass
 
+    #Solo si el alumno solo tiene 1 TFG
     def mismoTFG(self):
         if self.alumno.TFG not in self.profesor.TFG:
             return False
@@ -132,20 +135,39 @@ class Profesor():
 
 class CertificadoAsistencia(Certificado):
 
-    def mensaje(self):
-        print("El profesor " + self.profesor.nombre + " responsable de la asignatura " +
-              str(self.alumno.asignaturas) + " certifica la asistencia de " +
-              self.alumno.nombre + " al examen celebrado el día " + self.fecha + " .")
+    def mensaje(self, asignatura):
+        if self.esValido(asignatura) == True:
+            print("El profesor " + self.profesor.nombre + " responsable de la asignatura " +
+                  asignatura + " certifica la asistencia de " +
+                  self.alumno.nombre + " al examen celebrado el día " + self.fecha + " .")
+        else:
+            print("Certificado no valido para " + asignatura)
 
+    def esValido(self, asignatura):
+        if (len(self.profesor.asignaturas) == 0):
+            return False
+        elif (asignatura not in self.alumno.asignaturas or asignatura not in self.profesor.asignaturas):
+            return False
+        else:
+            return True
 
 class CertificadoTFG(Certificado):
 
-    def mensaje(self):
-        print("El profesor " + self.profesor.nombre + " director del trabajo final de carrera " +
-              self.alumno.TFG + " certifica la defensa por parte de " +
-              self.alumno.nombre + " a fecha de " + self.fecha + " .")
+    def mensaje(self, TFG):
+        if self.esValido(TFG) == True:
+            print("El profesor " + self.profesor.nombre + " director del trabajo final de carrera " +
+                  TFG + " certifica la defensa por parte de " +
+                  self.alumno.nombre + " a fecha de " + self.fecha + " .")
+        else:
+            print("Certificado no valido para TFG: " + TFG)
 
-
+    def esValido(self, TFG):
+        if (len(self.profesor.asignaturas) == 0):
+            return False
+        elif (TFG not in self.alumno.TFG or TFG not in self.profesor.TFGs):
+            return False
+        else:
+            return True
 
 
 if __name__ == '__main__':
@@ -155,8 +177,9 @@ if __name__ == '__main__':
     alum2 = Alumno("Pepe" , "Muñoz" , "TFG2" , [])
     cer = Certificado(prof1 , alum1 , "10/02")
     cerTFG = CertificadoTFG(prof1, alum1, "12/06")
-    cerAsis = CertificadoAsistencia(prof1 , alum1, "03/02")
+    cerAsis = CertificadoAsistencia(prof1 , alum2, "03/02")
 
     print(cer.alumno.nombre) # Prueba
-    cerTFG.mensaje()
-    cerAsis.mensaje()
+    cerTFG.mensaje("TFG1")
+    cerAsis.esValido("PP")
+    cerAsis.mensaje("PP")
