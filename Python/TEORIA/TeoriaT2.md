@@ -48,6 +48,11 @@ __1. Tema 2__
 
     - Módulo .math para randoms y operaciones aritmeticas
     - Módulo .statistisc para operaciones estadísticas como la moda y la media
+    ```
+    statistics.mean(data)
+    statistics.median(data)
+    statistics.moda(data)
+    ```
     - Módulo .decimal para la precision si hay que redondear numeros
     - Módulo .date y .datetime para dar formato a fechas y horas
         - Se puede dar formato a la informacion de la hora con strftime( )
